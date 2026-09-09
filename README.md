@@ -1,6 +1,6 @@
-# FDE Delivery Toolbox · 0.1.2
+# FDE Delivery Toolbox · 0.1.3
 
-Work 分发仓库：https://github.com/wailliamkf-commits/FDE 。本仓库从审查后的文件快照建立独立根提交，不继承其他仓库的 Git 历史。导入方法见 `docs/INSTALL_AND_WORK.md`。
+正式交付私仓：https://github.com/wailliamkf-commits/FDE 。本仓库从审查后的文件快照建立独立根提交，不继承其他仓库的 Git 历史。交付不要求在维护者账户安装、不要求商店上架，也不要求升级团队账户。接收与验收见 `docs/REPOSITORY_DELIVERY.md`；只有需要原生安装时才阅读 `docs/INSTALL_AND_WORK.md`。
 
 一套小而可执行的交付工具箱：从业务需求到可验证成果，再到安全交接与复用。
 它是跨项目的通用方法层，不存放任何真实客户数据、凭据、现行生产配置或岗位截图原件。
@@ -36,6 +36,8 @@ Work 分发仓库：https://github.com/wailliamkf-commits/FDE 。本仓库从审
 
 ## 最短试用路径
 
+只接收技能包：取得私仓读取权限，下载或克隆交接记录指定的完整提交，先阅读 `START_HERE.md` 和 `SECURITY.md`。不运行安装器、不修改账户设置。需要执行检查时，再按以下步骤验证。
+
 先从交接记录取得已审阅的完整 Git commit 或整包 ZIP SHA-256，并在包外用可信宿主工具核对；包内 manifest 不能替代这个根信任。确认验证期间只有一个可信写入者后，第一条包内命令必须是隔离模式的精确文件树校验：
 
 ```sh
@@ -55,7 +57,7 @@ Windows 的 Python 命令可能为 `py -3`；由当前执行环境核验，不�
 这些入口会把字节码缓存查找移出包目录并禁止写入；第一条 `-I -B` 校验同时避免包内同名模块在校验前遮蔽标准库。如果下载内容本身已含未列入 MANIFEST 的缓存或其他文件，精确校验会拒绝。它仍不是恶意下载沙箱：若验证器源码本身来自不可信包，只能靠前述包外 commit/ZIP 校验建立根信任。
 演示使用临时的模拟项目，不接触商店，不证明真实业务上线。
 
-本地技能首次安装的预览：
+可选：仅当用户要求在指定项目原生安装时，执行以下预览：
 
 ```sh
 python3 tools/install.py --project /ABSOLUTE/EXISTING/PROJECT \
@@ -80,6 +82,7 @@ python3 tools/install.py --project /ABSOLUTE/EXISTING/PROJECT \
 
 - `START_HERE.md`：新对话启动与实际环境检查。
 - `SECURITY.md`：权限、注入、数据、版本与失败处理。
+- `docs/REPOSITORY_DELIVERY.md`：私仓交付范围、接收步骤、验收边界。
 - `docs/INSTALL_AND_WORK.md`：Work / Codex / 插件的安装差异。
 - `docs/OPERATING_METHOD.md`：岗位能力 → 可交付方法与任务循环。
 - `docs/FDE_JOB_REQUIREMENTS_BASELINE.md`：有限招聘样本、公开一手岗位与工具箱设计的可追溯映射。
