@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "type": "toolbox_catalog_not_host_config",
+  "name": "fde-delivery-toolbox",
+  "version": "0.1.2",
+  "default_install_scope": "project",
+  "default_execution": "READ_OR_AUTHORIZED_LOCAL_DRAFT",
+  "automatic_updates": false,
+  "production_executor": false,
+  "skills": [
+    {
+      "name": "fde-discovery",
+      "path": "skills/fde-discovery/SKILL.md"
+    },
+    {
+      "name": "fde-connector-preflight",
+      "path": "skills/fde-connector-preflight/SKILL.md"
+    },
+    {
+      "name": "fde-delivery",
+      "path": "skills/fde-delivery/SKILL.md"
+    },
+    {
+      "name": "fde-eval-release",
+      "path": "skills/fde-eval-release/SKILL.md"
+    },
+    {
+      "name": "fde-handoff-cleanup",
+      "path": "skills/fde-handoff-cleanup/SKILL.md"
+    }
+  ]
+}

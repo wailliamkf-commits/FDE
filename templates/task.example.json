@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "task_id": "DEMO-001",
+  "project_id": "synthetic-demo",
+  "owner": "worker-01",
+  "objective": "Create one local demo artifact; no external calls.",
+  "non_goals": [
+    "No store changes",
+    "No external data or network"
+  ],
+  "risk": "LOCAL_WRITE",
+  "allowed_actions": [
+    "local.read",
+    "local.draft"
+  ],
+  "allowed_paths": [
+    "inputs",
+    "outputs"
+  ],
+  "allowed_targets": [],
+  "inputs": [],
+  "acceptance": [
+    {
+      "id": "AC-1",
+      "criterion": "Artifact states clearly that it is synthetic and includes no unsupported product claim."
+    }
+  ],
+  "budget": {
+    "max_attempts": 2,
+    "max_minutes": 30,
+    "max_external_cost_usd": 0
+  },
+  "rollback": "Keep originals; retain this draft separately. No production change.",
+  "status": "READY"
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "generated_at": "REPLACE_WITH_CURRENT_UTC_ISO_TIMESTAMP",
+  "temp_root": ".fde/tmp",
+  "items": [
+    {
+      "path": ".fde/tmp/DEMO-001/run-1/preview.txt",
+      "sha256": "REPLACE_WITH_ACTUAL_FILE_HASH",
+      "task_status": "CLOSED",
+      "closed_at": "REPLACE_WITH_ACTUAL_CLOSED_TIME",
+      "classification": "rebuildable-temp",
+      "referenced": false,
+      "active_writer": false,
+      "legal_hold": false,
+      "durable_outputs_verified": false,
+      "durable_evidence": {
+        "path": "evidence/DEMO-001/result.txt",
+        "sha256": "REPLACE_WITH_ACTUAL_FILE_HASH"
+      }
+    }
+  ]
+}

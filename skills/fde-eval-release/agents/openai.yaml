@@ -1,0 +1,5 @@
+interface:
+  display_name: "独立验收与发布准备"
+  short_description: "FDE: 独立验收与发布准备，以实际证据与明确范围交付。"
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,5 @@
+interface:
+  display_name: "连接与操作预检"
+  short_description: "FDE: 连接与操作预检，以实际证据与明确范围交付。"
+policy:
+  allow_implicit_invocation: false

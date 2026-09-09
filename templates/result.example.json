@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "task_id": "DEMO-001",
+  "task_sha256": "REPLACE_WITH_ACTUAL_TASK_DIGEST",
+  "worker": "worker-01",
+  "summary": "Replace with actual result, not a completion promise.",
+  "production_changed": false,
+  "checks": [
+    {
+      "id": "AC-1",
+      "status": "NOT_RUN",
+      "evidence": []
+    }
+  ],
+  "limitations": [],
+  "status": "REVIEW"
+}

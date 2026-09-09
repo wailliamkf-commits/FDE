@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "type": "intent_not_native_configuration",
+  "provider_changes_require_approval": true,
+  "auto_update": false,
+  "routes": [
+    {
+      "capability": "reasoning_and_coordination",
+      "requested_model": null,
+      "effective_model": "UNKNOWN",
+      "effective_effort": "UNKNOWN",
+      "allowed_data_classes": [
+        "public",
+        "synthetic"
+      ],
+      "benchmark_ref": null
+    },
+    {
+      "capability": "coding",
+      "requested_model": null,
+      "effective_model": "UNKNOWN",
+      "effective_effort": "UNKNOWN",
+      "allowed_data_classes": [
+        "public",
+        "synthetic"
+      ],
+      "benchmark_ref": null
+    },
+    {
+      "capability": "facts_and_visual_review",
+      "requested_model": null,
+      "effective_model": "UNKNOWN",
+      "effective_effort": "UNKNOWN",
+      "allowed_data_classes": [
+        "public",
+        "synthetic"
+      ],
+      "benchmark_ref": null
+    },
+    {
+      "capability": "routine_operations",
+      "requested_model": null,
+      "effective_model": "UNKNOWN",
+      "effective_effort": "UNKNOWN",
+      "allowed_data_classes": [
+        "public",
+        "synthetic"
+      ],
+      "benchmark_ref": null
+    },
+    {
+      "capability": "image_generation",
+      "requested_model": null,
+      "effective_model": "UNKNOWN",
+      "effective_effort": "UNKNOWN",
+      "allowed_data_classes": [
+        "public",
+        "synthetic"
+      ],
+      "benchmark_ref": null
+    }
+  ],
+  "selection": "Use actual host capabilities and project evals; do not hard-code historic marketing names as API IDs."
+}

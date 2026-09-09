@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "type": "project_intent_not_native_host_configuration",
+  "default_remote_access": "READ_ONLY_IF_AUTHORIZED",
+  "local_write": "EXPLICIT_PROJECT_PATHS_ONLY",
+  "production_executor": "NOT_IMPLEMENTED",
+  "costly_actions": "EXPLICIT_BUDGET_AND_APPROVAL",
+  "network_allowlist": [],
+  "allowed_write_paths": [],
+  "max_parallel_workers": 2,
+  "max_retries_same_conditions": 2,
+  "recursive_delegation": false,
+  "global_config_changes": false,
+  "cleanup_mode": "DRY_RUN_ONLY",
+  "stop_marker": ".fde/STOP",
+  "host_policy_verified": false
+}

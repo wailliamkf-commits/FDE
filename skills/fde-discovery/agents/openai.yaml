@@ -1,0 +1,5 @@
+interface:
+  display_name: "需求诊断与范围"
+  short_description: "FDE: 需求诊断与范围，以实际证据与明确范围交付。"
+policy:
+  allow_implicit_invocation: false

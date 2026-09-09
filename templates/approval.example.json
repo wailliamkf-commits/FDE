@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "status": "NOT_APPROVED",
+  "trusted_approval_system_ref": null,
+  "approved_by": null,
+  "task_sha256": null,
+  "payload_sha256": null,
+  "objects": [],
+  "fields": [],
+  "environment": null,
+  "expected_preconditions": [],
+  "max_cost_usd": 0,
+  "expires_at": null,
+  "single_use_nonce": null,
+  "revocation_check_ref": null,
+  "note": "Not a token and not authority. The agent must not grant its own approval. This release has no remote-write executor."
+}

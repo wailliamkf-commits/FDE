@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "project_id": "example-project",
+  "example_only": true,
+  "control_root": null,
+  "existing_controller_ref": null,
+  "project_root": null,
+  "facts_source_refs": [],
+  "release_gate_ref": null,
+  "default_risk": "READ",
+  "remote_writes_authorized": false,
+  "toolbox_commit": null,
+  "manifest_sha256": null,
+  "private_project_state_in_toolbox_repo": false
+}

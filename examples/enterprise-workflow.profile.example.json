@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "project_id": "enterprise-workflow-example",
+  "example_only": true,
+  "project_root": null,
+  "control_root": null,
+  "controller_ref": null,
+  "domain": "RECONFIRM_IN_ACTUAL_ENVIRONMENT",
+  "systems": [],
+  "facts_source_refs": [],
+  "release_gate_ref": null,
+  "baseline_constraints": [
+    "Preserve the existing controller, source of truth, and release gates unless an approved migration says otherwise.",
+    "Keep customer facts, approvals, credentials, personal data, and production configuration outside the toolbox repository.",
+    "Do not infer system access, business rules, certifications, outcomes, or commercial authority from a job description or template.",
+    "Use the smallest real workflow slice that can be independently evaluated.",
+    "Separate prototype acceptance, production readiness, user adoption, and commercial activation."
+  ],
+  "first_deliverable": "One verified local workflow artifact based on current approved facts.",
+  "remote_writes_authorized": false
+}

@@ -1,0 +1,5 @@
+interface:
+  display_name: "交接、运行与清理预览"
+  short_description: "FDE: 交接、运行与清理预览，以实际证据与明确范围交付。"
+policy:
+  allow_implicit_invocation: false

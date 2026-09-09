@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "host": {
+    "name": "UNKNOWN",
+    "version": "UNKNOWN",
+    "execution_location": "UNKNOWN"
+  },
+  "checked_at": null,
+  "capabilities": [
+    {
+      "name": "project_files",
+      "status": "NOT_CHECKED",
+      "evidence": null
+    },
+    {
+      "name": "shell",
+      "status": "NOT_CHECKED",
+      "evidence": null
+    },
+    {
+      "name": "github_read",
+      "status": "NOT_CHECKED",
+      "evidence": null
+    },
+    {
+      "name": "github_write",
+      "status": "NOT_CHECKED",
+      "evidence": null
+    },
+    {
+      "name": "native_skills",
+      "status": "NOT_CHECKED",
+      "evidence": null
+    },
+    {
+      "name": "plugin_registration",
+      "status": "NOT_CHECKED",
+      "evidence": null
+    },
+    {
+      "name": "browser",
+      "status": "NOT_CHECKED",
+      "evidence": null
+    },
+    {
+      "name": "image_editing",
+      "status": "NOT_CHECKED",
+      "evidence": null
+    },
+    {
+      "name": "subagents",
+      "status": "NOT_CHECKED",
+      "evidence": null
+    },
+    {
+      "name": "scheduler",
+      "status": "NOT_CHECKED",
+      "evidence": null
+    }
+  ],
+  "note": "A binary or configured credential does not establish a working integration."
+}

@@ -1,0 +1,20 @@
+{
+  "name": "fde-toolbox",
+  "interface": {
+    "displayName": "FDE Toolbox"
+  },
+  "plugins": [
+    {
+      "name": "fde-delivery-toolbox",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

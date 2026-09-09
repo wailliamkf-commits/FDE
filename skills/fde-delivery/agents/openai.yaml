@@ -1,0 +1,5 @@
+interface:
+  display_name: "小范围实际交付"
+  short_description: "FDE: 小范围实际交付，以实际证据与明确范围交付。"
+policy:
+  allow_implicit_invocation: false

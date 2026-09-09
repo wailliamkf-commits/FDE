@@ -1,0 +1,28 @@
+{
+  "name": "fde-delivery-toolbox",
+  "version": "0.1.2",
+  "description": "Small, evidence-driven FDE workflows: discovery, preflight, delivery, evaluation and safe handoff. No production executor.",
+  "author": {
+    "name": "wailliamkf-commits",
+    "url": "https://github.com/wailliamkf-commits"
+  },
+  "repository": "https://github.com/wailliamkf-commits/FDE",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "FDE Delivery Toolbox",
+    "shortDescription": "Turn scoped workflows into verifiable delivery.",
+    "longDescription": "Run bounded discovery, access preflight, delivery, evaluation, and evidence-based handoff without adding production authority.",
+    "developerName": "wailliamkf-commits",
+    "category": "Productivity",
+    "capabilities": [
+      "Workflow guidance",
+      "Evidence review",
+      "Project-scoped delivery"
+    ],
+    "defaultPrompt": [
+      "Assess this workflow and freeze one evidence-backed FDE task.",
+      "Preflight the systems, data, permissions, and failure boundaries for this task.",
+      "Evaluate this artifact against frozen acceptance and production-readiness gates."
+    ]
+  }
+}

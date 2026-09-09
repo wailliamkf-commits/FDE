@@ -1,0 +1,91 @@
+# FDE Delivery Toolbox · 0.1.2
+
+Work 分发仓库：https://github.com/wailliamkf-commits/FDE 。本仓库从审查后的文件快照建立独立根提交，不继承其他仓库的 Git 历史。导入方法见 `docs/INSTALL_AND_WORK.md`。
+
+一套小而可执行的交付工具箱：从业务需求到可验证成果，再到安全交接与复用。
+它是跨项目的通用方法层，不存放任何真实客户数据、凭据、现行生产配置或岗位截图原件。
+
+**先读 `START_HERE.md`；只选择当前任务需要的技能，不先搭建万能 Agent 平台。**
+
+## 这是什么，已经做到了什么
+
+- 五个标准 `SKILL.md` 能力包；每个都包含适用条件、输入、动作、输出和停止条件。
+- 一个通过当前本地结构校验的 skills-only 插件清单，以及用于 GitHub workspace 导入的 `.agents/plugins/marketplace.json`；不包含 MCP 服务、Hooks、浏览器扩展或调度器。
+- Python 3.10+ 标准库工具：环境检查、任务校验、操作范围预检查、证据文件校验、清理预览。
+- 项目级安装器：默认只预览；明确 `--apply` 才复制文件；不覆盖旧 Skill、全局设置或项目 AGENTS.md。
+- 保留的 GitHub 首次发布助手只适用于创建全新的 `fde-delivery-toolbox` 私仓；当前 FDE 分发仓库已存在，不使用该助手。后续更新通过当前仓库的审阅分支和 PR。
+- 单元测试与离线演示。没有运行时第三方 Python 依赖，不运行安装 Hooks，不自动下载程序。
+- 岗位需求基线与三张轻量交付模板：集成契约、评测/上线记分卡、复用/产品反馈。
+
+**本版不是 OS 沙箱，不是生产执行网关，不是已部署的自动运营服务。**
+`check-action` 只校验本工具箱可检查的条件，输出从不代表已获外部授权。
+远端写入与删除全部返回 `REMOTE_EXECUTOR_REQUIRED`，即使提供一张声称已批准的 JSON，也不能执行。
+证据 SHA-256 校验不等于商业事实正确，独立 QA 仍需检查真实内容与环境。
+
+## 五个技能
+
+| 技能 | 何时使用 | 主要产出 |
+|---|---|---|
+| `fde-discovery` | 新需求、接管项目、判断是否值得做 | 一页场景卡、价值基线、最小范围、非目标、验收与未决事实 |
+| `fde-connector-preflight` | 接口、权限、工具与环境可能不通 | 实测能力记录、集成契约、只读验证、精确阻塞 |
+| `fde-delivery` | 已有明确任务，需要实际实现 | 一个可检查的本地成果、差异、测试与异常说明 |
+| `fde-eval-release` | 声称完成、准备合并或发布 | 统一记分卡、独立复核、放行建议；不自授发布权 |
+| `fde-handoff-cleanup` | 换对话、收尾、开始巡检或整理临时文件 | 短交接、复用/产品反馈、清理预览与待验证调度信息 |
+
+这是能力库，不是五个常驻 Agent。一个总控可以按需调用；小任务可以由一名执行者完成，关键检查由独立上下文或人复核。
+
+## 最短试用路径
+
+先从交接记录取得已审阅的完整 Git commit 或整包 ZIP SHA-256，并在包外用可信宿主工具核对；包内 manifest 不能替代这个根信任。确认验证期间只有一个可信写入者后，第一条包内命令必须是隔离模式的精确文件树校验：
+
+```sh
+python3 -I -B tools/fde.py verify-bundle --expected-manifest-sha256 SHA256_FROM_TRUSTED_DELIVERY
+```
+
+它通过以后才运行其余入口：
+
+```sh
+python3 tools/fde.py doctor
+python3 tools/audit_bundle.py --expected-manifest-sha256 SHA256_FROM_TRUSTED_DELIVERY
+python3 -B -m unittest discover -s tests -v
+python3 tools/smoke_demo.py
+```
+
+Windows 的 Python 命令可能为 `py -3`；由当前执行环境核验，不强制改系统解释器。
+这些入口会把字节码缓存查找移出包目录并禁止写入；第一条 `-I -B` 校验同时避免包内同名模块在校验前遮蔽标准库。如果下载内容本身已含未列入 MANIFEST 的缓存或其他文件，精确校验会拒绝。它仍不是恶意下载沙箱：若验证器源码本身来自不可信包，只能靠前述包外 commit/ZIP 校验建立根信任。
+演示使用临时的模拟项目，不接触商店，不证明真实业务上线。
+
+本地技能首次安装的预览：
+
+```sh
+python3 tools/install.py --project /ABSOLUTE/EXISTING/PROJECT \
+  --expected-manifest-sha256 SHA256_FROM_TRUSTED_DELIVERY \
+  --skills fde-discovery fde-connector-preflight fde-delivery fde-eval-release fde-handoff-cleanup
+```
+
+预览核对后，同一命令添加 `--apply` 才复制文件。目标为该项目 `.agents/skills/` 和 `.fde/`，不修改用户全局技能目录。
+在真实宿主的技能列表确认名字，再做一个无副作用测试。文件复制完成不等于宿主已经发现或启用技能。
+
+## 仓库源码与安装目标必须分离
+
+工具箱仓库：方法、通用代码、测试、无真实数据的模板、来源和版本。
+项目工作区：实际产品资料、任务状态、截图、批准记录、成果与日志。
+平台安全层：凭据、OAuth、沙箱、网络代理、批准服务、真正的写入执行器。
+
+安装器拒绝把工具箱源码目录本身或其子目录当作项目根。项目档案根可以包含一个独立、只读的工具箱源码副本，但安装目标只写到项目自己的 `.agents/skills/` 与 `.fde/`。
+
+`.gitignore` 不是数据防泄漏系统。首次上传只提交 `MANIFEST.json` 枚举的、已经审查的文件。
+
+## 重要入口
+
+- `START_HERE.md`：新对话启动与实际环境检查。
+- `SECURITY.md`：权限、注入、数据、版本与失败处理。
+- `docs/INSTALL_AND_WORK.md`：Work / Codex / 插件的安装差异。
+- `docs/OPERATING_METHOD.md`：岗位能力 → 可交付方法与任务循环。
+- `docs/FDE_JOB_REQUIREMENTS_BASELINE.md`：有限招聘样本、公开一手岗位与工具箱设计的可追溯映射。
+- `docs/SETTINGS_AND_PERMISSIONS.md`：应当怎样设置，哪些只是意图。
+- `docs/PUBLISH_AND_RECOVER.md`：私有仓库创建、上传、回读与中断恢复。
+- `docs/UPDATES_AND_EVALS.md`：新模型和新 Skill 的受控更新。
+- `docs/ACCEPTANCE.md`：本版验收与未实现能力。
+
+参考资料核验日期：2026-09-08。`docs/SOURCES.md` 保存公开来源。插件结构校验、Work 管理员导入、GitHub 上传和真实项目验证分别记录，不合并为“已部署”。
