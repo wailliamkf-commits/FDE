@@ -1,6 +1,6 @@
 # 首次 GitHub 上传与恢复
 
-## 当前 Work 分发仓库
+## 当前正式交付私仓
 
 当前地址为 https://github.com/wailliamkf-commits/FDE ，由用户创建的专用私仓。首次导入采用已审阅的文件快照和新的根提交；不添加旧仓库 remote，不复制 `.git`，不导入旧分支或标签。以下首次发布助手是保留工具，不用于这个已存在的 FDE 仓库。后续变更使用 FDE 仓库的独立分支与 PR。
 
@@ -35,4 +35,4 @@ python3 tools/publish_github.py --owner YOUR_GITHUB_LOGIN \
 
 保存实际仓库 URL 与完整 commit；在另一个会话读回 START_HERE、SECURITY 和一个 SKILL。
 GitHub App 可能需要用户把新私有仓库加入允许列表。未索引时可按已知路径/提交直接读取；不能编造文件已可见。
-宿主技能发现、插件安装、业务试点和调度部署另外验证。
+当前账户原生安装不是仓库交付前提。只有选择对应目标时，才另外验证宿主技能发现、插件安装、业务试点或调度部署。
