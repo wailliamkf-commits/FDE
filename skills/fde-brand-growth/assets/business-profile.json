@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "status": "TEMPLATE_NOT_BUSINESS_FACTS",
+  "brand": null,
+  "market": {"country": null, "language": null, "currency": null, "timezone": null},
+  "demand_unit": null,
+  "business_model": null,
+  "category": {"name": null, "purchase_cycle_days": null, "repeat_mechanism": null, "selection_constraints": []},
+  "economics": {"contribution_definition": null, "allowable_cac": null, "payback_days": null, "maximum_test_loss": null},
+  "supply": {"serviceable_regions": [], "stock_evidence": null, "delivery_evidence": null, "sales_response_capacity": null},
+  "measurement": {"source_register": null, "maturity_window_days": null, "qualified_behavior_rule": null, "intent_rule": null},
+  "stage": {"value": "UNKNOWN", "evidence": [], "promotion_criteria": []},
+  "channels": [],
+  "unknowns": [],
+  "next_review": null
+}

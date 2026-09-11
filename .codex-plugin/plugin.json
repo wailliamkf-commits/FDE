@@ -1,6 +1,6 @@
 {
   "name": "fde-delivery-toolbox",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Small, evidence-driven FDE workflows: discovery, preflight, delivery, evaluation and safe handoff. No production executor.",
   "author": {
     "name": "wailliamkf-commits",

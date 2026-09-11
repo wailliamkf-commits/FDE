@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "evidence_type": "synthetic",
+  "scope": {
+    "source_id": "SYNTHETIC-EXAMPLE-ONLY",
+    "account": "example-account",
+    "demand_unit": "example-retail-scenario",
+    "period_start": "2026-07-01",
+    "period_end": "2026-07-31",
+    "timezone": "UTC",
+    "currency": "USD",
+    "conversion_action": "purchase",
+    "date_basis": "interaction_date",
+    "attribution_model": "example-single-source"
+  },
+  "quality": {"mature": true, "same_cohort": true, "deduplicated": true, "exclusive_channels": true},
+  "metrics": {"spend": 1000, "purchase_value": 1800, "sessions": 1000, "intent_known_sessions": 800, "intent_matched_sessions": 600, "qualified_sessions": 300, "purchase_sessions": 20},
+  "channels": [{"channel": "paid_search", "sessions": 500}, {"channel": "organic_search", "sessions": 300}, {"channel": "direct", "sessions": 100}, {"channel": "unknown", "sessions": 100}]
+}

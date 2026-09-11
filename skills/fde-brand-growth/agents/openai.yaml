@@ -1,0 +1,4 @@
+interface:
+  display_name: "品牌优质流量与增长经营"
+  short_description: "从需求验证、渠道获取到页面承接、商业贡献与品牌稳定性的可复核增长工作流"
+  default_prompt: "使用 $fde-brand-growth 分析这个品牌的增长约束，给出分阶段指标、优质流量获取实验和页面行动清单。"
