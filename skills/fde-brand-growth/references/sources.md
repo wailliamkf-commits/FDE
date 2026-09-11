@@ -1,0 +1,9 @@
+# 定义来源与维护
+
+2026-09-11读取下列官方资料。它们支撑指标边界，不为本框架的商业效果背书；S0—S4、优先级和模板是本项目提出的工作方法。
+
+- [Google Ads Conversion Lift](https://support.google.com/google-ads/answer/12003020?hl=en)：对照实验衡量增量；并非所有账户均可用。使用本技能不意味着具备该平台功能。
+- [GA4 engagement and bounce rate](https://support.google.com/analytics/answer/12195621?hl=en)：参与会话由时长、关键事件或页面数定义，跳出率是其反面。平台参与不等于本业务已验证的优质需求。
+- [GA4 attribution](https://support.google.com/analytics/answer/10596866)：归因模型分配路径功劳；模型和设置需随报告登记，不能直接当因果。
+
+平台路径、字段、归因设置与功能可用性在真实任务时重新核验。无来源支持的效率提升、算法阈值、国家偏好和AI替代比例都按假设处理。

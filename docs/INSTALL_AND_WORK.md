@@ -11,7 +11,7 @@
 - Source：`https://github.com/wailliamkf-commits/FDE`
 - Path：留空（市场清单位于根目录下的 `.agents/plugins/marketplace.json`）。
 - Branch, tag, or commit：填写本次交接记录的完整 40 位提交；首次验收建议固定版本。
-- 插件名称：`fde-delivery-toolbox`；五个 Skill 随同一插件导入。
+- 插件名称：`fde-delivery-toolbox`；六个 Skill 随同一插件导入。
 - 初次验收：在新 Work 对话选中插件，用模拟场景调用 `fde-discovery`，返回非空场景卡、实际读取的技能名、来源提交与宿主能力；未完成原生发现前不报告安装成功。
 - 只读试用：为一家虚构企业的订单异常人工分流流程生成场景卡，列出待验证假设、范围和验收；不连接真实 ERP、不发消息。
 

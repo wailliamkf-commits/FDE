@@ -331,6 +331,16 @@ class BundleAndInstallTests(unittest.TestCase):
             out=install.apply_plan(install.build_plan(ROOT,root,self.expected,selected));self.assertEqual(out["mode"],"INSTALLED_FILES_ONLY")
             self.assertTrue((root/".agents/skills/fde-discovery/SKILL.md").is_file());self.assertFalse((root/"AGENTS.md").exists())
             again=install.apply_plan(install.build_plan(ROOT,root,self.expected,selected));self.assertEqual(again["mode"],"ALREADY_INSTALLED")
+    def test_growth_skill_installs_with_runnable_local_resources(self):
+        with tempfile.TemporaryDirectory() as t:
+            root=Path(t)
+            install.apply_plan(install.build_plan(ROOT,root,self.expected,["fde-brand-growth"]))
+            skill=root/".agents/skills/fde-brand-growth"
+            self.assertTrue((skill/"references/measurement.md").is_file())
+            self.assertTrue((skill/"assets/review.md").is_file())
+            run=subprocess.run([sys.executable,"-I","-B",str(skill/"scripts/audit_snapshot.py"),str(skill/"assets/snapshot.synthetic.json")],capture_output=True,text=True,cwd=root)
+            self.assertEqual(run.returncode,0)
+            self.assertEqual(json.loads(run.stdout)["business_verdict"],"NOT_ASSESSED")
     def test_install_created_files_includes_lock(self):
         with tempfile.TemporaryDirectory() as source_dir,tempfile.TemporaryDirectory() as project_dir:
             source=Path(source_dir);project=Path(project_dir);payload=source/"payload.txt";payload.write_text("fixture")
