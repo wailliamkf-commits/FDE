@@ -1,0 +1,4 @@
+interface:
+  display_name: "Meta 广告诊断与落地页优化"
+  short_description: "关联广告流量与真实落地页，定位问题、补齐数据并形成可验证整改"
+  default_prompt: "使用 $meta-ads-diagnostics 诊断 Meta 广告到实际落地页的链路，列出取数位置、竞争性解释、整改动作和验收依据。"

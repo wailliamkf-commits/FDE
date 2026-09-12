@@ -1,0 +1,4 @@
+interface:
+  display_name: "Google Ads 流量与落地页诊断"
+  short_description: "从数据取数位置追踪流量、页面匹配与用户体验，产出可验证优化任务"
+  default_prompt: "使用 $google-ads-diagnostics 分析现有广告与站内证据，列出取数位置、主因候选和页面优化任务。"

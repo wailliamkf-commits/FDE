@@ -1,0 +1,71 @@
+{
+  "notice": "全部为合成资料和已给定的只读观察，仅用于离线练习，不需要访问这些示例 URL。未授权实际修改。",
+  "cases": [
+    {
+      "id": "shopping-route",
+      "request": "集合页平均跳出率30%，商品页75%，请评估把所有商品广告改到集合页，再给任务和验证。",
+      "ads": [
+        {
+          "type": "Search text",
+          "query": "outdoor lighting options",
+          "landing": "https://example.com/products/lamp-a"
+        },
+        {
+          "type": "PMax product card",
+          "merchant_item": "item-solar",
+          "title": "Solar Path Light",
+          "price": 120,
+          "currency": "USD",
+          "link": "https://example.com/products/lamp-a?variant=solar"
+        }
+      ],
+      "read_only_observation": {
+        "product_card_after_redirect": "https://example.com/products/lamp-a?variant=wired",
+        "displayed_product": "Wired Path Light",
+        "price": 90,
+        "stock": "available",
+        "add_to_cart": "succeeded",
+        "checked_at": "synthetic-observation"
+      },
+      "page_bounce_reports": {
+        "collection": {
+          "rate": 0.3,
+          "dominant_source": "email returning visitors"
+        },
+        "product": {
+          "rate": 0.75,
+          "dominant_source": "nonbrand new visitors"
+        }
+      },
+      "order_comparison": null
+    },
+    {
+      "id": "b2b-qualification",
+      "request": "B2B 表单变多但销售说质量差。网站还没自然排名，是不是应该停投？请给问题判断、取数位置和页面具体工作。",
+      "goal": "qualified EU commercial projects",
+      "supply": "EU-only commercial lighting projects; no retail repair service",
+      "ad_optimization_goal": "form_submit",
+      "crm_counts": {
+        "submissions": 120,
+        "qualified": 18,
+        "pending_review": 30,
+        "not_qualified": 72
+      },
+      "not_qualified_reasons": {
+        "outside_service_market": 40,
+        "retail_repair_requests": 20,
+        "unclassified": 12
+      },
+      "page_fields": [
+        "name",
+        "email",
+        "message"
+      ],
+      "page_copy": "Lighting for everyone worldwide",
+      "sales_response_median_hours": 72,
+      "target_response_hours": 24,
+      "closed_won": null,
+      "mature_sales_cycle_days": null
+    }
+  ]
+}

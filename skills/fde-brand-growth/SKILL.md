@@ -16,6 +16,10 @@ description: Analyze brand acquisition quality, intent-to-page funnels, market v
 5. **给出可执行成果。** 使用 [复盘与行动模板](assets/review.md)，每项写具体对象、证据、假设、责任角色、成本/时间上限、验收与回滚条件。补数写平台、报告、字段、日期、筛选、用途；最新后台路径按当时官方文档/可见界面核对。每次先完成最能改变决策的一项实验，不强制填写全部维度。
 6. **核验并交接。** 分清观察结果、归因结果和增量证明。对符合 [离线输入约定](references/offline-audit.md) 的规范化单组快照，先将工作目录设为本Skill目录，再运行 `python3 -I -B scripts/audit_snapshot.py INPUT.json`（输入使用项目中的绝对路径），输出只做口径门禁和描述计算。检查 [来源案例与反例](references/case-lessons.md) 的相关失败模式。结论状态使用 `OBSERVED / HYPOTHESIS / NEEDS_DATA / TEST / SCALE_CANDIDATE / HOLD`；测试通过不等于业务达标。
 
+## 按需调用渠道专项
+
+渠道专项诊断时，先检查当前可用技能：Google Ads 取数、目标口径、Search/Shopping/PMax/Demand Gen 到页面问题使用 `google-ads-diagnostics`；Meta 素材、版位、目录/表单到页面问题使用 `meta-ads-diagnostics`。只读取相关专项，不同时运行全库；未安装专项时继续本技能已有分支并说明覆盖限制，不自动安装。专项产出的证据和任务回到同一份复盘，跨平台归因收入保持分列。
+
 ## 完成标准
 
 - 用一句话回答「现阶段怎样获得更多有商业价值的需求」，说明最主要约束和为何优先处理它。

@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "integrated_on": "2026-09-12",
+  "toolbox_version": "0.1.5",
+  "base_commit": "61276ca7ce80d8d43ce932ae2d68a6dfe209e9ae",
+  "history_complete": false,
+  "original_sources_retained_outside_repository": true,
+  "packages": [
+    {
+      "name": "FDE_Google_Ads_v2_本地内容包.json",
+      "bytes": 61392,
+      "sha256": "93c499beed96d7e7556c1a692237b10eb3d053e7eff78a04d333382eb5940372"
+    },
+    {
+      "name": "FDE_Google_Ads_v2_Codex上传交接.md",
+      "bytes": 4756,
+      "sha256": "adc5137d17ae64a5d30e9935a9f6ce357fd1534a4dd7d8c05d7d07d8e46c6f64"
+    },
+    {
+      "name": "Meta_Ads_Codex_Local_v1.1.0.zip",
+      "bytes": 42591,
+      "sha256": "87e686f41f3d7ede0465d1c647d0ae0477bd9c012848c727fc873281574ec1ea"
+    }
+  ],
+  "files": [
+    {
+      "source": "google",
+      "original_path": "skills/growth-marketing/google-ads-diagnostics/SKILL.md",
+      "path": "skills/google-ads-diagnostics/SKILL.md",
+      "original_sha256": "14ce49a1aeaf82b2caa64a37c00d10c5ef7725c57069b676d367f34ec16a5d7a",
+      "edits": "add version/category metadata"
+    },
+    {
+      "source": "google",
+      "original_path": "skills/growth-marketing/google-ads-diagnostics/agents/openai.yaml",
+      "path": "skills/google-ads-diagnostics/agents/openai.yaml",
+      "original_sha256": "822497381593fa04fcd985e3ebdf595d9e5748b9be94ac150f273c39be2d6520",
+      "edits": "none"
+    },
+    {
+      "source": "google",
+      "original_path": "skills/growth-marketing/google-ads-diagnostics/assets/data-request.md",
+      "path": "skills/google-ads-diagnostics/assets/data-request.md",
+      "original_sha256": "218e5c01923416bbfec21bcfb15f118b40ae90991a7ccaf95678f0b10887d65a",
+      "edits": "none"
+    },
+    {
+      "source": "google",
+      "original_path": "skills/growth-marketing/google-ads-diagnostics/assets/diagnosis-workpad.md",
+      "path": "skills/google-ads-diagnostics/assets/diagnosis-workpad.md",
+      "original_sha256": "2758b5a752ff56bcc8595e369ef7384139220d03b5b9ad9d9ab1b371d5324198",
+      "edits": "none"
+    },
+    {
+      "source": "google",
+      "original_path": "skills/growth-marketing/google-ads-diagnostics/references/channel-page-playbook.md",
+      "path": "skills/google-ads-diagnostics/references/channel-page-playbook.md",
+      "original_sha256": "efc2f6f6f72ec4b4944fdbf6b862d0de968b22f06dd187e5730392321809c1dc",
+      "edits": "none"
+    },
+    {
+      "source": "google",
+      "original_path": "skills/growth-marketing/google-ads-diagnostics/references/data-sources.md",
+      "path": "skills/google-ads-diagnostics/references/data-sources.md",
+      "original_sha256": "1e4fec4c957bd53ad2cff4cec78baec91deee5494fdf681b389ea46c83ef489b",
+      "edits": "none"
+    },
+    {
+      "source": "google",
+      "original_path": "skills/growth-marketing/google-ads-diagnostics/references/diagnosis-matrix.md",
+      "path": "skills/google-ads-diagnostics/references/diagnosis-matrix.md",
+      "original_sha256": "52a244f9587e644ff2fc085f5e90f5fc01547dfade393553a0505f9afd1fb41b",
+      "edits": "none"
+    },
+    {
+      "source": "google",
+      "original_path": "skills/growth-marketing/google-ads-diagnostics/references/measurement-contract.md",
+      "path": "skills/google-ads-diagnostics/references/measurement-contract.md",
+      "original_sha256": "6bff2c1c4b7068506c8168f1b6a5e4a3a233745c1cf4a2061b58069abcdd1d10",
+      "edits": "none"
+    },
+    {
+      "source": "google",
+      "original_path": "skills/growth-marketing/google-ads-diagnostics/references/stages-experiments.md",
+      "path": "skills/google-ads-diagnostics/references/stages-experiments.md",
+      "original_sha256": "2c742517da93507564b342ec4ea7999d3c79c9e27a5cd692d4f47ed84f7a6817",
+      "edits": "none"
+    },
+    {
+      "source": "google",
+      "original_path": "validation/RESULTS.md",
+      "path": "docs/paid-media/imported/google/validation/RESULTS.md",
+      "original_sha256": "579be2203598ce1758bc6186eea613c666c19cf145ee2282d3fbc52ab98df767",
+      "edits": "prepend historical notice"
+    },
+    {
+      "source": "google",
+      "original_path": "validation/inputs/metrics-and-funnel.json",
+      "path": "docs/paid-media/imported/google/validation/inputs/metrics-and-funnel.json",
+      "original_sha256": "c26591e9ba83fc7a33810eef80a03de916aefeca5cac6790180cb6e8a899c681",
+      "edits": "add final newline"
+    },
+    {
+      "source": "google",
+      "original_path": "validation/inputs/page-fit-and-b2b.json",
+      "path": "docs/paid-media/imported/google/validation/inputs/page-fit-and-b2b.json",
+      "original_sha256": "81a5f9798b57ca8c488def321ea402cae126dd136ef32d2b52f81eb6c077188c",
+      "edits": "add final newline"
+    },
+    {
+      "source": "meta",
+      "original_path": "docs/VALIDATION.md",
+      "path": "docs/paid-media/imported/meta/docs/VALIDATION.md",
+      "original_sha256": "b1f861da61027db6b89c7b9f4483f912a19d1e64f6f8a7184da28e922e5ba7c9",
+      "edits": "prepend historical notice"
+    },
+    {
+      "source": "meta",
+      "original_path": "docs/forward-test.md",
+      "path": "docs/paid-media/imported/meta/docs/forward-test.md",
+      "original_sha256": "5bfcdd9ca612a1df4f96cb58394c300037e595b8b1f5d5701d7f9decabfbc99e",
+      "edits": "prepend historical notice"
+    },
+    {
+      "source": "meta",
+      "original_path": "skills/meta-ads-diagnostics/SKILL.md",
+      "path": "skills/meta-ads-diagnostics/SKILL.md",
+      "original_sha256": "cfb52e6e28419ccd3b83a2e7aba05eb117ef5a7f80abf4d851ef82e1db6a34c9",
+      "edits": "replace provisional classification line"
+    },
+    {
+      "source": "meta",
+      "original_path": "skills/meta-ads-diagnostics/agents/openai.yaml",
+      "path": "skills/meta-ads-diagnostics/agents/openai.yaml",
+      "original_sha256": "6e600f6ec3055aebe3fda4dc17d6b2517a6c8cc00a3144bbda416daa829ea86f",
+      "edits": "none"
+    },
+    {
+      "source": "meta",
+      "original_path": "skills/meta-ads-diagnostics/assets/diagnosis-task.md",
+      "path": "skills/meta-ads-diagnostics/assets/diagnosis-task.md",
+      "original_sha256": "cb07c1f642cc8f9e818c2394e1c62029670fb0e3a600880e6863540a1c0b83d5",
+      "edits": "none"
+    },
+    {
+      "source": "meta",
+      "original_path": "skills/meta-ads-diagnostics/references/data-map.md",
+      "path": "skills/meta-ads-diagnostics/references/data-map.md",
+      "original_sha256": "0e73e4260c7bbc47827acb0feabf98147bf61b13bced24367f71143f90c23e1c",
+      "edits": "none"
+    },
+    {
+      "source": "meta",
+      "original_path": "skills/meta-ads-diagnostics/references/diagnostic-playbook.md",
+      "path": "skills/meta-ads-diagnostics/references/diagnostic-playbook.md",
+      "original_sha256": "c13c1377c270a510d1052cb47346b165589fba3a8760bb483a6948bc22b1df9a",
+      "edits": "none"
+    },
+    {
+      "source": "meta",
+      "original_path": "skills/meta-ads-diagnostics/references/routes-and-evidence.md",
+      "path": "skills/meta-ads-diagnostics/references/routes-and-evidence.md",
+      "original_sha256": "b0ef9f4b9ed99c829214e257654da2dad341ea504b0a5ffb4e84914c57a8187d",
+      "edits": "none"
+    }
+  ]
+}

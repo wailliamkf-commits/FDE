@@ -1,0 +1,103 @@
+{
+  "notice": "全部为合成数据，仅用于离线练习。允许读取和本地分析，未授权修改任何外部账户。",
+  "cases": [
+    {
+      "id": "mixed-goals",
+      "request": "汇总 ROAS 从4涨到7，是否可以加预算？请给出具体判断、最小取数位置和执行任务。",
+      "scope": {
+        "currency": "USD",
+        "timezone": "UTC",
+        "account": "synthetic-account",
+        "campaign_id": "campaign-a",
+        "date_basis": "ad_interaction_date",
+        "purchase_window": "30 days",
+        "export_lag_days": 45,
+        "same_scope": true
+      },
+      "cost_base": [
+        {
+          "period": "A",
+          "cost": 1000,
+          "clicks": 1000
+        },
+        {
+          "period": "B",
+          "cost": 1200,
+          "clicks": 1500
+        }
+      ],
+      "conversion_actions": [
+        {
+          "period": "A",
+          "action": "purchase",
+          "conversions": 20,
+          "value": 3000,
+          "cost": null
+        },
+        {
+          "period": "A",
+          "action": "add_to_cart",
+          "conversions": 40,
+          "value": 1000,
+          "cost": null
+        },
+        {
+          "period": "B",
+          "action": "purchase",
+          "conversions": 24,
+          "value": 2400,
+          "cost": null
+        },
+        {
+          "period": "B",
+          "action": "add_to_cart",
+          "conversions": 100,
+          "value": 6000,
+          "cost": null
+        }
+      ],
+      "campaign_goals": [
+        "purchase",
+        "add_to_cart"
+      ],
+      "visible_query_sample": [
+        {
+          "query": "example brand reviews",
+          "purchase_conversions": 0.4,
+          "cost": 80
+        },
+        {
+          "query": "how to repair outdoor lamp",
+          "purchase_conversions": 0.0,
+          "cost": 15
+        },
+        {
+          "query": "outdoor lights",
+          "purchase_conversions": 0.6,
+          "cost": 220
+        }
+      ],
+      "notes": "没有订单明细、页面版本或价格促销变更记录。可见查询不是全部查询。"
+    },
+    {
+      "id": "funnel-and-devices",
+      "request": "本期 checkout 事件160次，purchase事件60次，所以结账完成率37.5%；移动端贡献70%购买，我准备移动端减价20%。请判断并列具体需要数据与位置。",
+      "raw_events": {
+        "begin_checkout": 160,
+        "purchase": 60,
+        "user_key": null,
+        "checkout_key": null,
+        "same_cohort": null
+      },
+      "device_purchase_share": {
+        "mobile": 0.7,
+        "desktop": 0.3
+      },
+      "device_cost": null,
+      "campaign_bidding": "target ROAS",
+      "website_error_logs": null,
+      "payment_attempts": null,
+      "period": "synthetic-14-days"
+    }
+  ]
+}
