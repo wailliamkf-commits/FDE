@@ -1,4 +1,4 @@
-# FDE Delivery Toolbox · 0.1.5
+# FDE Delivery Toolbox · 0.1.6
 
 正式交付私仓：https://github.com/wailliamkf-commits/FDE 。本仓库从审查后的文件快照建立独立根提交，不继承其他仓库的 Git 历史。交付不要求在维护者账户安装、不要求商店上架，也不要求升级团队账户。接收与验收见 `docs/REPOSITORY_DELIVERY.md`；只有需要原生安装时才阅读 `docs/INSTALL_AND_WORK.md`。
 
@@ -9,7 +9,7 @@
 
 ## 这是什么，已经做到了什么
 
-- 八个标准 `SKILL.md` 能力包；每个都包含适用条件、输入、动作、输出和停止条件。
+- 九个标准 `SKILL.md` 能力包；每个都包含适用条件、输入、动作、输出和停止条件。
 - 一个通过当前本地结构校验的 skills-only 插件清单，以及用于 GitHub workspace 导入的 `.agents/plugins/marketplace.json`；不包含 MCP 服务、Hooks、浏览器扩展或调度器。
 - Python 3.10+ 标准库工具：环境检查、任务校验、操作范围预检查、证据文件校验、清理预览。
 - 项目级安装器：默认只预览；明确 `--apply` 才复制文件；不覆盖旧 Skill、全局设置或项目 AGENTS.md。
@@ -22,7 +22,7 @@
 远端写入与删除全部返回 `REMOTE_EXECUTOR_REQUIRED`，即使提供一张声称已批准的 JSON，也不能执行。
 证据 SHA-256 校验不等于商业事实正确，独立 QA 仍需检查真实内容与环境。
 
-## 八个技能
+## 九个技能
 
 | 技能 | 何时使用 | 主要产出 |
 |---|---|---|
@@ -32,6 +32,7 @@
 | `fde-eval-release` | 声称完成、准备合并或发布 | 统一记分卡、独立复核、放行建议；不自授发布权 |
 | `fde-handoff-cleanup` | 换对话、收尾、开始巡检或整理临时文件 | 短交接、复用/产品反馈、清理预览与待验证调度信息 |
 | `fde-brand-growth` | 品牌需求验证、优质流量、漏斗诊断、扩量与资产经营 | 分阶段指标、渠道/页面行动、实验与离线口径检查 |
+| `fde-brand-site` | 跨行业品牌网站建设与持续优化 | 业务适配、竞品、页面/视觉/交互、SEO/GEO/自然流量、模型分工、上线验收 |
 | `google-ads-diagnostics` | Search、Shopping、PMax、Demand Gen 数据与页面诊断 | 16 类取数入口、12 类问题、指标口径、商品/页面任务 |
 | `meta-ads-diagnostics` | Facebook / Instagram 等 Meta 广告与承接诊断 | 14 类取数入口、16 条指标规则、17 类问题、整改任务 |
 
@@ -103,3 +104,7 @@ python3 tools/install.py --project /ABSOLUTE/EXISTING/PROJECT \
 ## 付费媒体诊断模块
 
 [使用与溯源索引](docs/paid-media/README.md)说明两项广告技能的分类、版本、数据需求与验证边界。Google Ads 内容 v2.0.0、Meta 内容 v1.1.0 都可独立按文件使用；只在需要原生安装时按现有安装流程选择对应技能。没有新增广告 API、自动预算操作或必装插件。
+
+## 跨行业品牌网站模块 v1.0.0
+
+[客户使用入口](docs/BRAND_SITE.md)：零售、定制、B2B、服务预约、订阅和内容业务按模式选择对象、页面、视觉证据、转化与验收，不沿用某一客户的行业设定。包含五张可填写工作表、官方依据和合成演练。前沿思考模型负责定向与选择执行模型；每批次核验实际可用能力，不锁死代际名称。本包提供调度方法，**不包含自动模型切换服务或生产执行器**。
