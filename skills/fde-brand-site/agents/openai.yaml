@@ -1,0 +1,4 @@
+interface:
+  display_name: "品牌独立站全流程"
+  short_description: "从市场竞品研究到视觉、自然流量、交互和上线验收的品牌建站方法"
+  default_prompt: "使用 $fde-brand-site 为当前品牌建立有证据的页面与视觉方案，并执行已授权的最小优化、验证真实结果。"

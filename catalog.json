@@ -2,7 +2,7 @@
   "schema_version": 1,
   "type": "toolbox_catalog_not_host_config",
   "name": "fde-delivery-toolbox",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "default_install_scope": "project",
   "default_execution": "READ_OR_AUTHORIZED_LOCAL_DRAFT",
   "automatic_updates": false,
@@ -37,6 +37,12 @@
       "path": "skills/google-ads-diagnostics/SKILL.md",
       "category": "growth/paid-media",
       "content_version": "2.0.0"
+    },
+    {
+      "name": "fde-brand-site",
+      "path": "skills/fde-brand-site/SKILL.md",
+      "category": "brand/storefront",
+      "content_version": "1.0.0"
     },
     {
       "name": "meta-ads-diagnostics",

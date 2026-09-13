@@ -3,6 +3,16 @@
   "type": "intent_not_native_configuration",
   "provider_changes_require_approval": true,
   "auto_update": false,
+  "planner_policy": {
+    "selection": "current_authorized_available_frontier_reasoner",
+    "executor_selected_by": "planner",
+    "executor_policy": "lowest_sufficient_total_delivery_cost",
+    "refresh": "new_batch_or_material_capability_change_or_evidence_based_escalation",
+    "lock_within_batch": true,
+    "unavailable": "report_blocked_model_or_request_approved_alternative",
+    "host_cannot_route": "report_plan_only_not_actual_model_switch",
+    "reference": "skills/fde-brand-site/references/model-orchestration.md"
+  },
   "routes": [
     {
       "capability": "reasoning_and_coordination",

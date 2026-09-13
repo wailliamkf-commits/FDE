@@ -25,13 +25,13 @@ import subprocess
 from datetime import datetime, timezone
 from typing import Any
 
-VERSION = "0.1.5"
+VERSION = "0.1.6"
 MAX_JSON_BYTES = 2_000_000
 MAX_HASH_BYTES = 100_000_000
 SKILL_NAMES = (
     "fde-discovery", "fde-connector-preflight", "fde-delivery",
     "fde-eval-release", "fde-handoff-cleanup", "fde-brand-growth",
-    "google-ads-diagnostics", "meta-ads-diagnostics",
+    "google-ads-diagnostics", "meta-ads-diagnostics", "fde-brand-site",
 )
 RISK_LEVELS = {"READ", "LOCAL_WRITE", "STAGING_WRITE", "PRODUCTION_WRITE", "HIGH_IMPACT"}
 REMOTE_RISKS = {"STAGING_WRITE", "PRODUCTION_WRITE", "HIGH_IMPACT"}
