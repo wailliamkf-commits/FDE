@@ -1,0 +1,792 @@
+{
+  "schema_version": 1,
+  "name": "fde-case-delivery-foundation",
+  "content_version": "0.1.0",
+  "source": {
+    "id": "datawhale-fde-cases-issue-1",
+    "filename": "Datawhale FDE案例100.pdf",
+    "edition": "第一期；前言日期2026-09-06",
+    "physical_page_count": 246,
+    "case_count": 24,
+    "page_convention": "PDF文件从1开始的物理页；正文印刷页码一般比物理页少1；245—246为宣传页。",
+    "sha256": "aafdf4b329f86e240546b326dc3559a995027f26e6179e6292f54c37a7d7345e",
+    "original_included": false,
+    "reviewed_on": "2026-09-16",
+    "source_type": "interview_case_collection",
+    "rights": "原著权利归原权利人；仅收录原创精炼摘要及来源索引，不授予原文再分发权。"
+  },
+  "cases": [
+    {
+      "id": "DW-01",
+      "label": "制造业经验传承",
+      "physical_pages": [
+        7,
+        14
+      ],
+      "business_problem": "老师傅隐性经验难以传授",
+      "reported_approach": "跟岗建立知识地图；文档解析与RAG接入既有培训、测验和进度追踪。",
+      "suggested_pattern": "知识检索",
+      "pattern_origin": "toolbox_inference",
+      "claims": [
+        {
+          "kind": "acceptance_threshold",
+          "value": "解析约95%、召回片段准确率80%以上",
+          "physical_pages": [
+            10
+          ],
+          "qualification": "前期小范围约定的验收标准，不是培训业务收益；技术跑通后仍需陪跑。"
+        }
+      ],
+      "limitations": "前期小范围约定的验收标准，不是培训业务收益；技术跑通后仍需陪跑。",
+      "independently_verified": false
+    },
+    {
+      "id": "DW-02",
+      "label": "车管所网办",
+      "physical_pages": [
+        15,
+        24
+      ],
+      "business_problem": "材料审核与跨系统录入耗时",
+      "reported_approach": "视觉/OCR与合同信息提取结合RPA；异常转人工，持续用真实材料迭代。",
+      "suggested_pattern": "识别核对执行",
+      "pattern_origin": "toolbox_inference",
+      "claims": [
+        {
+          "kind": "reported_result",
+          "value": "单件约15分钟至3—5分钟，识别约70%多至98%",
+          "physical_pages": [
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24
+          ],
+          "qualification": "受访者报告，缺少样本量、统计窗口及独立验收；合规判断仍由业务负责。"
+        }
+      ],
+      "limitations": "受访者报告，缺少样本量、统计窗口及独立验收；合规判断仍由业务负责。",
+      "independently_verified": false
+    },
+    {
+      "id": "DW-03",
+      "label": "诉讼案件工作台",
+      "physical_pages": [
+        25,
+        33
+      ],
+      "business_problem": "海量案卷和隐性法律判断难复用",
+      "reported_approach": "案件工作空间结合摘要、知识图谱、法条与判例检索，律师最终判断。",
+      "suggested_pattern": "知识检索",
+      "pattern_origin": "toolbox_inference",
+      "claims": [
+        {
+          "kind": "reported_result",
+          "value": "材料整理效率约提高70%",
+          "physical_pages": [
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33
+          ],
+          "qualification": "案例自述和个案展示，不是普遍准确率或法律结论保证。"
+        }
+      ],
+      "limitations": "案例自述和个案展示，不是普遍准确率或法律结论保证。",
+      "independently_verified": false
+    },
+    {
+      "id": "DW-04",
+      "label": "城市规划研判",
+      "physical_pages": [
+        34,
+        46
+      ],
+      "business_problem": "空间数据和跨部门规则割裂",
+      "reported_approach": "一个区内窄场景试点；GIS负责计算，模型调度，高频工作流与长尾Agent分开。",
+      "suggested_pattern": "专业工具编排",
+      "pattern_origin": "toolbox_inference",
+      "claims": [
+        {
+          "kind": "reported_result",
+          "value": "试点报告约10—20分钟",
+          "physical_pages": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46
+          ],
+          "qualification": "小范围试点，不能外推全市生产效果；数据权限与规则协调是依赖。"
+        }
+      ],
+      "limitations": "小范围试点，不能外推全市生产效果；数据权限与规则协调是依赖。",
+      "independently_verified": false
+    },
+    {
+      "id": "DW-05",
+      "label": "TikTok达人建联履约",
+      "physical_pages": [
+        47,
+        55
+      ],
+      "business_problem": "达人商品匹配和履约链路分散",
+      "reported_approach": "标签初筛、商品匹配、脚本辅助和状态提醒，统一履约视图，重要沟通留人。",
+      "suggested_pattern": "业务流水线",
+      "pattern_origin": "toolbox_inference",
+      "claims": [
+        {
+          "kind": "reported_result",
+          "value": "平均履约约一个月至18天",
+          "physical_pages": [
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55
+          ],
+          "qualification": "试运行自述；无完整样本与GMV增益归因；跨境数据权限需核查。"
+        }
+      ],
+      "limitations": "试运行自述；无完整样本与GMV增益归因；跨境数据权限需核查。",
+      "independently_verified": false
+    },
+    {
+      "id": "DW-06",
+      "label": "跨境物流装载",
+      "physical_pages": [
+        56,
+        67
+      ],
+      "business_problem": "依赖装车经验且理论方案不易执行",
+      "reported_approach": "模型理解调度，Python装箱优化；转为工人可执行的编号、截面和顺序图。",
+      "suggested_pattern": "专业工具编排",
+      "pattern_origin": "toolbox_inference",
+      "claims": [
+        {
+          "kind": "projection",
+          "value": "现场装车约5小时至约2小时",
+          "physical_pages": [
+            62
+          ],
+          "qualification": "原文是预计，不是现场实测；约99方结果来自原型模拟装载，非长期经营证明。"
+        }
+      ],
+      "limitations": "原文是预计，不是现场实测；约99方结果来自原型模拟装载，非长期经营证明。",
+      "independently_verified": false
+    },
+    {
+      "id": "DW-07",
+      "label": "企业研发转型",
+      "physical_pages": [
+        68,
+        76
+      ],
+      "business_problem": "个人AI编码习惯无法形成组织协作",
+      "reported_approach": "现场培训咨询与角色梳理，共创Spec和协作方式，按实际能力调整。",
+      "suggested_pattern": "组织采用",
+      "pattern_origin": "toolbox_inference",
+      "claims": [
+        {
+          "kind": "not_measured",
+          "value": "基金公司未披露完整ROI",
+          "physical_pages": [
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76
+          ],
+          "qualification": "另一制造客户短期小组统计不能移植为本案或长期收益。"
+        }
+      ],
+      "limitations": "另一制造客户短期小组统计不能移植为本案或长期收益。",
+      "independently_verified": false
+    },
+    {
+      "id": "DW-08",
+      "label": "工业物料与采购",
+      "physical_pages": [
+        77,
+        86
+      ],
+      "business_problem": "搜索差导致重复物料、重复采购和库存损失",
+      "reported_approach": "根因诊断后优先数据标准化和语义检索；人决定采购，先定义ROI确认人。",
+      "suggested_pattern": "知识检索",
+      "pattern_origin": "toolbox_inference",
+      "claims": [
+        {
+          "kind": "not_measured",
+          "value": "未公布可复核采购节省额",
+          "physical_pages": [
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86
+          ],
+          "qualification": "业务目标与评估设计不等于已实现收益；老ERP集成及跨部门采用仍重要。"
+        }
+      ],
+      "limitations": "业务目标与评估设计不等于已实现收益；老ERP集成及跨部门采用仍重要。",
+      "independently_verified": false
+    },
+    {
+      "id": "DW-09",
+      "label": "央国企财务流程",
+      "physical_pages": [
+        87,
+        95
+      ],
+      "business_problem": "票据判断、信息关联和录入周期长",
+      "reported_approach": "钉钉收票与关联，规则和AI判断，风险交人，RPA辅助录入，先小切口证明价值。",
+      "suggested_pattern": "识别核对执行",
+      "pattern_origin": "toolbox_inference",
+      "claims": [
+        {
+          "kind": "reported_result",
+          "value": "流程半个月至一个月缩至约1—2天",
+          "physical_pages": [
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95
+          ],
+          "qualification": "受访者报告；未给样本或独立验收；多模型监督不替代财务责任与确定性核算。"
+        }
+      ],
+      "limitations": "受访者报告；未给样本或独立验收；多模型监督不替代财务责任与确定性核算。",
+      "independently_verified": false
+    },
+    {
+      "id": "DW-10",
+      "label": "线下零售对账",
+      "physical_pages": [
+        96,
+        105
+      ],
+      "business_problem": "多源单据核对慢且差异影响收入",
+      "reported_approach": "OCR/视觉与工作流完成首轮核对，人处理差异，先在上海部分门店试点。",
+      "suggested_pattern": "识别核对执行",
+      "pattern_origin": "toolbox_inference",
+      "claims": [
+        {
+          "kind": "reported_result",
+          "value": "每周期1—2人天至数小时",
+          "physical_pages": [
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104,
+            105
+          ],
+          "qualification": "少量门店试点；多收少收要按净差异评估，无已回收金额证据。"
+        }
+      ],
+      "limitations": "少量门店试点；多收少收要按净差异评估，无已回收金额证据。",
+      "independently_verified": false
+    },
+    {
+      "id": "DW-11",
+      "label": "外贸资料资产",
+      "physical_pages": [
+        106,
+        118
+      ],
+      "business_problem": "资料分散且环境与隐私阻碍接入",
+      "reported_approach": "先修网络和文件关系；客户本地Codex按任务包开发测试，形成能力与SOP。",
+      "suggested_pattern": "数据流程底座",
+      "pattern_origin": "toolbox_inference",
+      "claims": [
+        {
+          "kind": "reported_result",
+          "value": "单次产品识别演示约10分钟",
+          "physical_pages": [
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118
+          ],
+          "qualification": "项目仍第一阶段，单例不能外推总体效率；原件不出域与反馈脱敏需明确。"
+        }
+      ],
+      "limitations": "项目仍第一阶段，单例不能外推总体效率；原件不出域与反馈脱敏需明确。",
+      "independently_verified": false
+    },
+    {
+      "id": "DW-12",
+      "label": "鞋服电商素材",
+      "physical_pages": [
+        119,
+        128
+      ],
+      "business_problem": "个人生成工具不能稳定公司级生产",
+      "reported_approach": "商品素材统一流程，人物服饰场景一致性检查，人工商用与审美确认。",
+      "suggested_pattern": "业务流水线",
+      "pattern_origin": "toolbox_inference",
+      "claims": [
+        {
+          "kind": "not_measured",
+          "value": "POC及内部试用，未量化提效",
+          "physical_pages": [
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127,
+            128
+          ],
+          "qualification": "不能把核心功能完成写成规模生产；商品真实性是硬约束。"
+        }
+      ],
+      "limitations": "不能把核心功能完成写成规模生产；商品真实性是硬约束。",
+      "independently_verified": false
+    },
+    {
+      "id": "DW-13",
+      "label": "消防维保数字化",
+      "physical_pages": [
+        129,
+        135
+      ],
+      "business_problem": "纸表、Excel和设备档案割裂",
+      "reported_approach": "先线上化表单与数据，再辅助重复异常描述与历史查询，专业判断留人。",
+      "suggested_pattern": "数据流程底座",
+      "pattern_origin": "toolbox_inference",
+      "claims": [
+        {
+          "kind": "not_measured",
+          "value": "持续推进，未报告规模化业务指标",
+          "physical_pages": [
+            129,
+            130,
+            131,
+            132,
+            133,
+            134,
+            135
+          ],
+          "qualification": "监管系统无接口，不适合重建全平台；叫停采购不等于运营收益。"
+        }
+      ],
+      "limitations": "监管系统无接口，不适合重建全平台；叫停采购不等于运营收益。",
+      "independently_verified": false
+    },
+    {
+      "id": "DW-14",
+      "label": "国企组织采用",
+      "physical_pages": [
+        136,
+        145
+      ],
+      "business_problem": "技术平台交付后业务仍难自驱",
+      "reported_approach": "知识萃取、流程显性化、RAG/Agent与培训，强化HR推动和人员责任。",
+      "suggested_pattern": "组织采用",
+      "pattern_origin": "toolbox_inference",
+      "claims": [
+        {
+          "kind": "reported_result",
+          "value": "自述避免新增一名法务编制",
+          "physical_pages": [
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145
+          ],
+          "qualification": "避免招聘的反事实估算，非经审计现金节省；人、组织、数据、技术共同决定落地。"
+        }
+      ],
+      "limitations": "避免招聘的反事实估算，非经审计现金节省；人、组织、数据、技术共同决定落地。",
+      "independently_verified": false
+    },
+    {
+      "id": "DW-15",
+      "label": "本地生活短视频文案",
+      "physical_pages": [
+        146,
+        157
+      ],
+      "business_problem": "高频内容依赖优秀运营经验",
+      "reported_approach": "业务字段、优秀样例与提示/技能结合校验，主观反馈结构化，必要时人工回退。",
+      "suggested_pattern": "业务流水线",
+      "pattern_origin": "toolbox_inference",
+      "claims": [
+        {
+          "kind": "not_measured",
+          "value": "定性报告效率和平均质量改善",
+          "physical_pages": [
+            146,
+            147,
+            148,
+            149,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155,
+            156,
+            157
+          ],
+          "qualification": "一期仅文案与脚本，不含拍摄剪辑发布；无平台经营效果归因。"
+        }
+      ],
+      "limitations": "一期仅文案与脚本，不含拍摄剪辑发布；无平台经营效果归因。",
+      "independently_verified": false
+    },
+    {
+      "id": "DW-16",
+      "label": "电信数据分析",
+      "physical_pages": [
+        158,
+        165
+      ],
+      "business_problem": "人工SQL与报告慢且难连续追问",
+      "reported_approach": "拆解输入处理输出，构建可重复分析Agent，语义层与人工质检接入既有入口。",
+      "suggested_pattern": "生产分析",
+      "pattern_origin": "toolbox_inference",
+      "claims": [
+        {
+          "kind": "reported_result",
+          "value": "按天分析缩至分钟或小时",
+          "physical_pages": [
+            158,
+            159,
+            160,
+            161,
+            162,
+            163,
+            164,
+            165
+          ],
+          "qualification": "自述，无准确率、成本或规模的完整数据；演示成功不代表生产稳定。"
+        }
+      ],
+      "limitations": "自述，无准确率、成本或规模的完整数据；演示成功不代表生产稳定。",
+      "independently_verified": false
+    },
+    {
+      "id": "DW-17",
+      "label": "非标制造售前报价",
+      "physical_pages": [
+        166,
+        177
+      ],
+      "business_problem": "图纸到成本报价依赖稀缺老师傅",
+      "reported_approach": "多模态先结构化，再接企业物料、供应商、历史报价与规则；人工校准逐步推广。",
+      "suggested_pattern": "业务流水线",
+      "pattern_origin": "toolbox_inference",
+      "claims": [
+        {
+          "kind": "reported_result",
+          "value": "自述至少减少50%相关工作量",
+          "physical_pages": [
+            166,
+            167,
+            168,
+            169,
+            170,
+            171,
+            172,
+            173,
+            174,
+            175,
+            176,
+            177
+          ],
+          "qualification": "无独立量测；不能让模型凭常识报价，也不能把员工担忧的人数变化写成裁员成果。"
+        }
+      ],
+      "limitations": "无独立量测；不能让模型凭常识报价，也不能把员工担忧的人数变化写成裁员成果。",
+      "independently_verified": false
+    },
+    {
+      "id": "DW-18",
+      "label": "生物科技经营数智化",
+      "physical_pages": [
+        178,
+        185
+      ],
+      "business_problem": "客户订单数据与经营口径滞后",
+      "reported_approach": "先CRM、数仓、BI，再分析、培训招聘辅助，建立客户内部团队。",
+      "suggested_pattern": "数据流程底座",
+      "pattern_origin": "toolbox_inference",
+      "claims": [
+        {
+          "kind": "reported_result",
+          "value": "新人培训近两个月至约三周",
+          "physical_pages": [
+            178,
+            179,
+            180,
+            181,
+            182,
+            183,
+            184,
+            185
+          ],
+          "qualification": "标题页另有宣传性数字，正文缺完整口径；信息化基础不能跳过。"
+        }
+      ],
+      "limitations": "标题页另有宣传性数字，正文缺完整口径；信息化基础不能跳过。",
+      "independently_verified": false
+    },
+    {
+      "id": "DW-19",
+      "label": "消费品包装审核",
+      "physical_pages": [
+        186,
+        196
+      ],
+      "business_problem": "研发上下文割裂、包装审核排队",
+      "reported_approach": "从真实业务观察定义岗位任务；OCR/VLM抽取、确定性代码核算，带来源与人工审核。",
+      "suggested_pattern": "识别核对执行",
+      "pattern_origin": "toolbox_inference",
+      "claims": [
+        {
+          "kind": "not_measured",
+          "value": "未披露量化成果",
+          "physical_pages": [
+            186,
+            187,
+            188,
+            189,
+            190,
+            191,
+            192,
+            193,
+            194,
+            195,
+            196
+          ],
+          "qualification": "法规/渠道要求需当期专业核查；模型识别不等于审核合规。"
+        }
+      ],
+      "limitations": "法规/渠道要求需当期专业核查；模型识别不等于审核合规。",
+      "independently_verified": false
+    },
+    {
+      "id": "DW-20",
+      "label": "制造经营透明",
+      "physical_pages": [
+        197,
+        206
+      ],
+      "business_problem": "ERP记录未按实际业务关系打通",
+      "reported_approach": "保留ERP，只读同步到外部关系视图，核对差异并飞书通知。",
+      "suggested_pattern": "数据流程底座",
+      "pattern_origin": "toolbox_inference",
+      "claims": [
+        {
+          "kind": "not_measured",
+          "value": "上线短，仅确认基础功能与可见性改善",
+          "physical_pages": [
+            197,
+            198,
+            199,
+            200,
+            201,
+            202,
+            203,
+            204,
+            205,
+            206
+          ],
+          "qualification": "作者明确尚不能证明利润或成本改善；只读试点不能顺带取得回写权。"
+        }
+      ],
+      "limitations": "作者明确尚不能证明利润或成本改善；只读试点不能顺带取得回写权。",
+      "independently_verified": false
+    },
+    {
+      "id": "DW-21",
+      "label": "消防CAD交付",
+      "physical_pages": [
+        207,
+        215
+      ],
+      "business_problem": "规则绘制核验重复且修改成本高",
+      "reported_approach": "CAD解析与专业规则生成初稿，设计师可调整关键参数并最终审核。",
+      "suggested_pattern": "专业工具编排",
+      "pattern_origin": "toolbox_inference",
+      "claims": [
+        {
+          "kind": "reported_result",
+          "value": "大型项目数天至约30分钟初稿",
+          "physical_pages": [
+            207,
+            208,
+            209,
+            210,
+            211,
+            212,
+            213,
+            214,
+            215
+          ],
+          "qualification": "初步结果不等于合规签审图纸；输出格式和专业责任必须保留。"
+        }
+      ],
+      "limitations": "初步结果不等于合规签审图纸；输出格式和专业责任必须保留。",
+      "independently_verified": false
+    },
+    {
+      "id": "DW-22",
+      "label": "跨境电商库存补货广告",
+      "physical_pages": [
+        216,
+        225
+      ],
+      "business_problem": "SaaS、物流照片、补货表和广告决策割裂",
+      "reported_approach": "SaaS经Supabase中转接飞书，识图回填、沿用补货公式、人工确认库存与广告判断。",
+      "suggested_pattern": "数据流程底座",
+      "pattern_origin": "toolbox_inference",
+      "claims": [
+        {
+          "kind": "reported_result",
+          "value": "物流图片数据处理每人每天4—5小时至1小时内",
+          "physical_pages": [
+            216,
+            217,
+            218,
+            219,
+            220,
+            221,
+            222,
+            223,
+            224,
+            225
+          ],
+          "qualification": "交付后缺少完整广告成本、营收与利润追踪，不能推导ROI；接口Key共享限制需验证。"
+        }
+      ],
+      "limitations": "交付后缺少完整广告成本、营收与利润追踪，不能推导ROI；接口Key共享限制需验证。",
+      "independently_verified": false
+    },
+    {
+      "id": "DW-23",
+      "label": "工程租赁长尾报价",
+      "physical_pages": [
+        226,
+        233
+      ],
+      "business_problem": "老板难兼顾长尾获客与多因素报价",
+      "reported_approach": "轻量入口结构化信息，规则/模型/运筹给报价区间；大客户和复杂情况转老板。",
+      "suggested_pattern": "业务流水线",
+      "pattern_origin": "toolbox_inference",
+      "claims": [
+        {
+          "kind": "not_measured",
+          "value": "仅开展一个多月，未量化增收",
+          "physical_pages": [
+            226,
+            227,
+            228,
+            229,
+            230,
+            231,
+            232,
+            233
+          ],
+          "qualification": "早期定性评价，增收分成仍探索；行业规则与人工转接优先。"
+        }
+      ],
+      "limitations": "早期定性评价，增收分成仍探索；行业规则与人工转接优先。",
+      "independently_verified": false
+    },
+    {
+      "id": "DW-24",
+      "label": "海外快消动销数据",
+      "physical_pages": [
+        234,
+        244
+      ],
+      "business_problem": "总部发货与终端动销断层",
+      "reported_approach": "统一跨国口径，抽取清洗多格式资料，先单国单品线，数字回溯原始行。",
+      "suggested_pattern": "数据流程底座",
+      "pattern_origin": "toolbox_inference",
+      "claims": [
+        {
+          "kind": "anonymized_report",
+          "value": "发现问题比例不到10%至约30%",
+          "physical_pages": [
+            234,
+            235,
+            236,
+            237,
+            238,
+            239,
+            240,
+            241,
+            242,
+            243,
+            244
+          ],
+          "qualification": "原文明确绝对数脱敏、界面为demo；不是准确率、召回率或独立验证结果。"
+        }
+      ],
+      "limitations": "原文明确绝对数脱敏、界面为demo；不是准确率、召回率或独立验证结果。",
+      "independently_verified": false
+    }
+  ]
+}
