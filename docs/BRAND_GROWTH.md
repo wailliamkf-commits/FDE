@@ -1,4 +1,4 @@
-# 品牌增长方法 v0.1.0
+# 品牌增长方法 v0.2.0
 
 目标：从「买到更多点击」升级为「持续获得可服务、有需求、能产生可持续贡献的人群」。本模块作为FDE的业务分析能力，使用 `skills/fde-brand-growth/SKILL.md`；独立于现有通用交付流程，不重建FDE，也不要求安装多个常驻Agent。
 
@@ -11,7 +11,9 @@
 
 ## 核心路线
 
-需求证据 → 可服务市场 → 人群与承诺匹配 → 页面/商品/销售承接 → 成交与贡献 → 扩量验证 → 资产复用 → 稳定经营。
+需求发现 → 市场验证 → 最小承接 → 用户行为验证 → 商业价值验证 → 资产建设 → 多渠道复用 → 品牌资产增长 → 稳定性监控 → 反馈需求。
+
+需求验证、资产建设、监控纠偏三个循环共同运行。十步是工作流程，下面的S0—S4是需求单元的证据成熟阶段；一个项目不必每次从头执行。完整门槛与交接见 [闭环架构](../skills/fde-brand-growth/references/growth-loop.md)。
 
 | 阶段 | 当前任务 | 看什么 | 下阶段凭什么进入 |
 |---|---|---|---|
@@ -37,8 +39,19 @@
 
 每周看成熟需求单元和上周实验；每月看商业贡献、资产与阶段；每季看集中度和新需求。日常先监测费用、追踪和可售/支付异常。
 
+## v0.2.0 本次完善
+
+增加最小承接与长期资产的投资区分，以demand_id串联证据、实验、页面商品与商业结果；把反馈记录作为闭环结束条件。补齐页面/商品治理、首次异常排查、快照回补、季节覆盖和反证机制。历史项目固定数量与预算比例不升格为通用规则。
+
+现有fde-brand-growth负责需求与商业决策；google-ads-diagnostics和meta-ads-diagnostics负责渠道专项；fde-brand-site负责页面体验与实现。使用实际可用技能，交接同一需求与实验记录，不重复造另一套平台。
+
+升级兼容：保留原有技能名、S0—S4、单组快照输入契约与脚本行为。业务配置和实验空模板增加可选字段，旧项目按需要补齐；新增Markdown工作表由Agent填写，不是自动状态机或新的执行器。已有安装锁不自动升级。
+
 ## 内容入口
 
+- [闭环与交接](../skills/fde-brand-growth/references/growth-loop.md)、[需求档案](../skills/fde-brand-growth/assets/demand-record.md)：十步、三个循环、阶段监测与技能协作。
+- [经营治理](../skills/fde-brand-growth/references/operating-governance.md)、[治理追踪表](../skills/fde-brand-growth/assets/governance-workpad.md)：排序、清退、责任和成效。
+- [监控反馈](../skills/fde-brand-growth/references/monitoring-feedback.md)：异常、回补、季节与日周月动作。
 - [技能入口](../skills/fde-brand-growth/SKILL.md)：运行顺序、输入缺口、成果和完成标准。
 - [数据与指标](../skills/fde-brand-growth/references/measurement.md)：来源、归因、去重、指标定义和补数清单。
 - [流量获取](../skills/fde-brand-growth/references/acquisition.md)：渠道任务、约束诊断、优先顺序。
@@ -61,6 +74,8 @@ python3 -B -m unittest discover -s tests -v
 合成输入用于验证计算与失败分支，不证明Dazuma或任何真实客户的效果。脚本不读取广告后台、不计算跨平台增量、不自动输出投放建议。真实数据分析依赖项目资料和Skill判断；下一次Dazuma使用应先复核原始报表和缺失的结账/贡献数据。
 
 FDE仓库只保存方法、空模板和合成测试；真实项目配置和账本留在各自工作区。安装不在本次交付范围，仓库存在不等于宿主已发现技能。
+
+本轮验证范围见 [验证记录](GROWTH_VALIDATION.md)。
 
 ## 后续迭代
 

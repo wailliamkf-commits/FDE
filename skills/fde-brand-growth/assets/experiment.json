@@ -22,5 +22,10 @@
   "rollback": null,
   "owner": null,
   "result": null,
-  "decision": null
+  "decision": null,
+  "falsification_conditions": [],
+  "execution_verification": null,
+  "concurrent_changes": [],
+  "contribution_cost_boundary": null,
+  "feedback_demand_id": null
 }
