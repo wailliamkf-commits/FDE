@@ -2,7 +2,7 @@
   "schema_version": 1,
   "type": "toolbox_catalog_not_host_config",
   "name": "fde-delivery-toolbox",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "default_install_scope": "project",
   "default_execution": "READ_OR_AUTHORIZED_LOCAL_DRAFT",
   "automatic_updates": false,
@@ -30,7 +30,9 @@
     },
     {
       "name": "fde-brand-growth",
-      "path": "skills/fde-brand-growth/SKILL.md"
+      "path": "skills/fde-brand-growth/SKILL.md",
+      "category": "growth/strategy",
+      "content_version": "0.2.0"
     },
     {
       "name": "google-ads-diagnostics",
