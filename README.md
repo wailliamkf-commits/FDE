@@ -1,4 +1,4 @@
-# FDE Delivery Toolbox · 0.1.7
+# FDE Delivery Toolbox · 0.1.8
 
 正式交付私仓：https://github.com/wailliamkf-commits/FDE 。本仓库从审查后的文件快照建立独立根提交，不继承其他仓库的 Git 历史。交付不要求在维护者账户安装、不要求商店上架，也不要求升级团队账户。接收与验收见 `docs/REPOSITORY_DELIVERY.md`；只有需要原生安装时才阅读 `docs/INSTALL_AND_WORK.md`。
 
@@ -6,6 +6,10 @@
 它是跨项目的通用方法层，不存放任何真实客户数据、凭据、现行生产配置或岗位截图原件。
 
 **先读 `START_HERE.md`；只选择当前任务需要的技能，不先搭建万能 Agent 平台。**
+
+## FDE 案例驱动交付基础包 · 0.1.0
+
+新增 [fde-case-delivery-foundation](docs/fde-case-delivery-foundation/README.md)：24案来源索引、技术选择方法、主方案/备用方案/人工兜底、验收与价值追踪，以及后续知识补充入口。它是供现有九个技能按需读取的参考包，不是新增原生Skill或自动执行器；不包含PDF原件、未抓取的导图节点和真实客户数据。
 
 ## 这是什么，已经做到了什么
 
