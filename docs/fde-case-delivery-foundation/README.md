@@ -1,6 +1,8 @@
-# FDE 案例驱动交付基础包 · 0.1.0
+# FDE 案例驱动交付基础包 · 0.2.0
 
-标识：`fde-case-delivery-foundation`。类型：**reference_pack**，不是第十个原生 Skill、执行器或自动方案生成服务。
+标识：`fde-case-delivery-foundation`。类型：**reference_pack**，不是执行器或自动方案生成服务。仓库另提供 `fde-architecture-select` 原生技能入口，负责读取本包进行选型，安装与宿主调用仍需单独验证。
+
+新增 [架构与实现工具包](architecture/README.md)：10 张模式卡、精炼知识、61 视频来源索引与 [部署交接单](templates/architecture-selection.md)。先按需求选一个主模式，按实际依赖组合；不默认加载全库或自动部署。
 
 从 Datawhale 第一期 24 个案例提炼需求诊断与交付方法；后续导图、视频、官方文档作为有出处的增量资料进入，不改变已有项目授权。
 
@@ -28,6 +30,7 @@
 | 环节 | 使用现有技能 | 基础包提供 |
 |---|---|---|
 | 场景与根因 | fde-discovery | 案例、假设与主备方案模板 |
+| 架构选型 | fde-architecture-select | 组件数据流、字段状态、实现次序与主备路径 |
 | 接口权限 | fde-connector-preflight | 数据、权限和降级问题 |
 | 实现 | fde-delivery | 已冻结的范围与输出契约 |
 | 检验 | fde-eval-release | 基线、验收与放行证据 |

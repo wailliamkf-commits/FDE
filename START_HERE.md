@@ -31,6 +31,8 @@ MANIFEST 证明内容一致，不独立证明发布者身份或代码安全。
 
 ## 第四步：做一项实际交付
 
+需求范围已知但需要选择 workflow/Agent/RAG、工具、记忆或恢复架构时，读取 `skills/fde-architecture-select/SKILL.md`，按需查 `docs/fde-case-delivery-foundation/architecture/README.md`。已有明确架构无需重复选型；固定报表允许直接脚本方案。
+
 用 fde-discovery 选择一项当前确实存在的任务；用 preflight 验证必要工具和集成契约；用 delivery 产出本地成果。
 任务冻结输入、范围与验收。网络超时先回读，不盲重试；最多两次同条件尝试。
 再由 fde-eval-release 按统一记分卡复核，最后 handoff-cleanup 保存恢复入口、复用/产品反馈和清理预览。
