@@ -25,7 +25,7 @@ import subprocess
 from datetime import datetime, timezone
 from typing import Any
 
-VERSION = "0.1.8"
+VERSION = "0.1.9"
 MAX_JSON_BYTES = 2_000_000
 MAX_HASH_BYTES = 100_000_000
 SKILL_NAMES = (

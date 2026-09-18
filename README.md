@@ -1,4 +1,4 @@
-# FDE Delivery Toolbox · 0.1.8
+# FDE Delivery Toolbox · 0.1.9
 
 正式交付私仓：https://github.com/wailliamkf-commits/FDE 。本仓库从审查后的文件快照建立独立根提交，不继承其他仓库的 Git 历史。交付不要求在维护者账户安装、不要求商店上架，也不要求升级团队账户。接收与验收见 `docs/REPOSITORY_DELIVERY.md`；只有需要原生安装时才阅读 `docs/INSTALL_AND_WORK.md`。
 
@@ -101,7 +101,9 @@ python3 tools/install.py --project /ABSOLUTE/EXISTING/PROJECT \
 
 参考资料核验日期：2026-09-08。`docs/SOURCES.md` 保存公开来源。插件结构校验、Work 管理员导入、GitHub 上传和真实项目验证分别记录，不合并为“已部署”。
 
-## 品牌增长模块 v0.2.0
+## 品牌增长模块 v0.3.0
+
+新增市场/竞品/用户研究、广告与SEO交接、活动承诺及定制询盘闭环，见 [会议补充与验证](docs/GROWTH_MEETING_UPGRADE.md)。
 
 品牌增长Skill以十步闭环串联需求、最小承接、商业验证、资产与监控反馈，覆盖S0需求探索到S4稳定经营；详细方案见 [docs/BRAND_GROWTH.md](docs/BRAND_GROWTH.md)。按需加载参考资料，不强制一次运行全部分析。真实业务数据留在项目工作区。仓库交付不等于后台接通、原生安装或商业效果已验证。
 
