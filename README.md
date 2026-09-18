@@ -1,4 +1,4 @@
-# FDE Delivery Toolbox · 0.1.8
+# FDE Delivery Toolbox · 0.2.0
 
 正式交付私仓：https://github.com/wailliamkf-commits/FDE 。本仓库从审查后的文件快照建立独立根提交，不继承其他仓库的 Git 历史。交付不要求在维护者账户安装、不要求商店上架，也不要求升级团队账户。接收与验收见 `docs/REPOSITORY_DELIVERY.md`；只有需要原生安装时才阅读 `docs/INSTALL_AND_WORK.md`。
 
@@ -7,13 +7,13 @@
 
 **先读 `START_HERE.md`；只选择当前任务需要的技能，不先搭建万能 Agent 平台。**
 
-## FDE 案例驱动交付基础包 · 0.1.0
+## FDE 案例驱动交付基础包 · 0.2.0
 
-新增 [fde-case-delivery-foundation](docs/fde-case-delivery-foundation/README.md)：24案来源索引、技术选择方法、主方案/备用方案/人工兜底、验收与价值追踪，以及后续知识补充入口。它是供现有九个技能按需读取的参考包，不是新增原生Skill或自动执行器；不包含PDF原件、未抓取的导图节点和真实客户数据。
+扩充 [fde-case-delivery-foundation](docs/fde-case-delivery-foundation/README.md)：保留 24 案，新增 10 张架构实现卡、61 个视频的来源索引、精炼知识与项目选型模板。参考包仍不是执行器；新增 `fde-architecture-select` 技能按需选择模式并交接给现有交付技能。详细内容见 [架构入口](docs/fde-case-delivery-foundation/architecture/README.md)，不包含原视频、PDF原件、逐帧全文或客户数据。
 
 ## 这是什么，已经做到了什么
 
-- 九个标准 `SKILL.md` 能力包；每个都包含适用条件、输入、动作、输出和停止条件。
+- 十个标准 `SKILL.md` 能力包；每个都包含适用条件、输入、动作、输出和停止条件。
 - 一个通过当前本地结构校验的 skills-only 插件清单，以及用于 GitHub workspace 导入的 `.agents/plugins/marketplace.json`；不包含 MCP 服务、Hooks、浏览器扩展或调度器。
 - Python 3.10+ 标准库工具：环境检查、任务校验、操作范围预检查、证据文件校验、清理预览。
 - 项目级安装器：默认只预览；明确 `--apply` 才复制文件；不覆盖旧 Skill、全局设置或项目 AGENTS.md。
@@ -26,10 +26,11 @@
 远端写入与删除全部返回 `REMOTE_EXECUTOR_REQUIRED`，即使提供一张声称已批准的 JSON，也不能执行。
 证据 SHA-256 校验不等于商业事实正确，独立 QA 仍需检查真实内容与环境。
 
-## 九个技能
+## 十个技能
 
 | 技能 | 何时使用 | 主要产出 |
 |---|---|---|
+| `fde-architecture-select` | 需求明确但需要架构、模块与实施路径选择 | 主备架构、字段/状态、部署交接和验收方案 |
 | `fde-discovery` | 新需求、接管项目、判断是否值得做 | 一页场景卡、价值基线、最小范围、非目标、验收与未决事实 |
 | `fde-connector-preflight` | 接口、权限、工具与环境可能不通 | 实测能力记录、集成契约、只读验证、精确阻塞 |
 | `fde-delivery` | 已有明确任务，需要实际实现 | 一个可检查的本地成果、差异、测试与异常说明 |

@@ -1,0 +1,558 @@
+{
+  "schema_version": 1,
+  "method": "Saved visual observation notes; approximately 10-second samples plus end frame; no audio transcription; not complete coverage",
+  "original_media_included": false,
+  "original_media_available": false,
+  "source_urls_verified": false,
+  "sources": [
+    {
+      "id": "video-001",
+      "title": "LumaAgent-Agent凭啥记住三年前说的话？这题一问...-20260917_075234.mp4",
+      "sha256": "e2a3a447daac43dd24bc8929e062cd791e8d9a11bfc61ff951be5f2dab3bdc22",
+      "duration_seconds": 298.143991,
+      "sampled_frames": 31,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-002",
+      "title": "LumaAgent-Agent大模型面试题：6分钟讲透企业客...-20260917_075258.mp4",
+      "sha256": "b036407340a76da72e342ebc94d21493b23eec7296864bb7d94defcf5b91fb1d",
+      "duration_seconds": 357.379002,
+      "sampled_frames": 37,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-003",
+      "title": "LumaAgent-Python｜大模型｜LangChain...-20260917_075513.mp4",
+      "sha256": "559982f5545cfa6bda68e973077ab0ddd3d76b015c89e3c95d21e4af2f07023b",
+      "duration_seconds": 274.739002,
+      "sampled_frames": 29,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-004",
+      "title": "LumaAgent-RAG大模型面试别只答向量库，这题答错直...-20260917_075302.mp4",
+      "sha256": "4e8b3bef5d721518b535a968e99bb68c06a3661675f2215efeba24960946fb9e",
+      "duration_seconds": 237.353991,
+      "sampled_frames": 25,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-005",
+      "title": "LumaAgent-RAG面试官只问一题：2023图灵奖得主...-20260917_075315.mp4",
+      "sha256": "bb4ae29f9348eca14624eecb50b95d2590fc84a2cb3bb286628d5ac52128a392",
+      "duration_seconds": 306.086009,
+      "sampled_frames": 32,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-006",
+      "title": "LumaAgent-RAG面试被问混合召回怎么设计，这样答直...-20260917_075313.mp4",
+      "sha256": "ef3a43e24fff4167c0a95518e5462bb82ac252e380079042508db9292838a27e",
+      "duration_seconds": 226.069909,
+      "sampled_frames": 24,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-007",
+      "title": "LumaAgent-一道Agent记忆系统面试题，问崩了多少...-20260917_075253.mp4",
+      "sha256": "06716829d64541e7313cc2b902a243ad92857a72e95be07a0b1b8f84911d6fc6",
+      "duration_seconds": 262.316009,
+      "sampled_frames": 28,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-008",
+      "title": "LumaAgent-一道大模型智能体面试题，多工具调用如何防...-20260917_075311.mp4",
+      "sha256": "044e517e05b44ba0d52d35975e1adbac4c9c23abd685b3f69fc6d7926be06eb8",
+      "duration_seconds": 317.347007,
+      "sampled_frames": 33,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-009",
+      "title": "LumaAgent-一道智能体面试题：查天气路况规划路线，工...-20260917_075308.mp4",
+      "sha256": "a1bfbebc4742306e752b609fdb712753f1d444b47de27e9d3bd90f6c6f608379",
+      "duration_seconds": 412.850998,
+      "sampled_frames": 43,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-010",
+      "title": "LumaAgent-别再只会调API写Prompt，这道面试...-20260917_075323.mp4",
+      "sha256": "9a4d10599e90ab028425a84308bd0b716eeb485a9485b1caaffc1384d4d57030",
+      "duration_seconds": 338.919002,
+      "sampled_frames": 35,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-011",
+      "title": "LumaAgent-同样一道Agent_成本优化题，月薪1万...-20260917_075511.mp4",
+      "sha256": "c70fb78540709ae359d2c4f48a94080c6eb8f3708676bea7a06be5086ed9f3a6",
+      "duration_seconds": 217.78,
+      "sampled_frames": 23,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-012",
+      "title": "LumaAgent-多Agent协作是伪需求？这道大厂架构师...-20260917_075246.mp4",
+      "sha256": "5478af37b75b11bd43f0c39a2ef0c4bc7add180fec9524b0530645d0896307a0",
+      "duration_seconds": 322.501995,
+      "sampled_frames": 34,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-013",
+      "title": "LumaAgent-大厂Agent面试题：用户改口拒收退款，...-20260917_075317.mp4",
+      "sha256": "a1aa24f185462a5d77df833f283c8956cdf6775fbc6fda42dcff19ed0223be8e",
+      "duration_seconds": 278.383991,
+      "sampled_frames": 29,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-014",
+      "title": "LumaAgent-大厂Agent面试题：答出架构定级P7，...-20260917_075407.mp4",
+      "sha256": "87b1b8c422b6e6be6eb284d7a5e579c682d024b20f166089af44084b68c52450",
+      "duration_seconds": 336.271995,
+      "sampled_frames": 35,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-015",
+      "title": "LumaAgent-大厂AI面试必考：3_道Agent真题，...-20260917_075515.mp4",
+      "sha256": "f4b03c4571e699babdc37b48d66469712a2df5480d4dabb38143876b631b9632",
+      "duration_seconds": 172.64,
+      "sampled_frames": 19,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-016",
+      "title": "LumaAgent-大模型Agent面试必问：怎么防止它无限...-20260917_075400.mp4",
+      "sha256": "8f75815d510664a2aa88029cf86c958c56062d3849b085a09d8633b635134b25",
+      "duration_seconds": 268.91,
+      "sampled_frames": 28,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-017",
+      "title": "LumaAgent-大模型面试必考RAG系统设计题目，90%...-20260917_075319.mp4",
+      "sha256": "5d5222f8d7cbc6c1eac643c876507938b935287a07c7f2d9bf0ae48773c582d4",
+      "duration_seconds": 358.377007,
+      "sampled_frames": 37,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-018",
+      "title": "LumaAgent-字节面试官：设计抖音热点分析机器人，九成...-20260917_075357.mp4",
+      "sha256": "a9c0d82277a46cf0200766a070b3a25dfda338e178fded366421fc893ced50ca",
+      "duration_seconds": 499.43898,
+      "sampled_frames": 51,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-019",
+      "title": "LumaAgent-很多人做_RAG_只会调参数，却忽略最致...-20260917_075532.mp4",
+      "sha256": "067de163cc1032e05c1617271036eab3269dc20a33db7d421b6509dfc1dabf52",
+      "duration_seconds": 218.081995,
+      "sampled_frames": 23,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-020",
+      "title": "LumaAgent-我当年面大模型岗，栽在一道所有人都觉得简...-20260917_075240.mp4",
+      "sha256": "3147428441202a43de8c236f47d93fd11a917a334d36a1ea6d9de38ede35437e",
+      "duration_seconds": 237.61,
+      "sampled_frames": 25,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-021",
+      "title": "LumaAgent-普通人怎么做_AI_Agent？把我踩过...-20260917_075457.mp4",
+      "sha256": "86e1bce9c5f131b68dc8b72d2eedf4a26eded4a4928b769588a51c6f6c9cd298",
+      "duration_seconds": 237.076009,
+      "sampled_frames": 25,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-022",
+      "title": "LumaAgent-每天_1‑2_小时，普通人也能上手AI_...-20260917_075518.mp4",
+      "sha256": "8cf518ed7a00383dd3a2d793dee3e2b0fc491265eca695e1d4db9f9e4001e0e3",
+      "duration_seconds": 244.738005,
+      "sampled_frames": 26,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-023",
+      "title": "LumaAgent-订机票Agent怎么搭？面试人这6点答完...-20260917_075242.mp4",
+      "sha256": "59fe1470900bf21f068239313abce51fa146efaec2a5c07fd01336b8368bf8d9",
+      "duration_seconds": 236.912993,
+      "sampled_frames": 25,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-024",
+      "title": "LumaAgent-面试官：Agent_做错了事，怎么让它自...-20260917_075422.mp4",
+      "sha256": "d6a02c6fb2d0ae43f73d842f2353b70ab34f4aed3e5a262b8cafcc733a10ebc1",
+      "duration_seconds": 203.569002,
+      "sampled_frames": 22,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-025",
+      "title": "LumaAgent-面试官：Agent怎么拆复杂任务？答好这...-20260917_075248.mp4",
+      "sha256": "4c87dea6b127a04971e60c6cecb7a12b42ff7df72c47994ef03aaa6bcf73d478",
+      "duration_seconds": 342.077007,
+      "sampled_frames": 36,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-026",
+      "title": "LumaAgent-面试官：Agent订票翻车，你怎么排查？...-20260917_075405.mp4",
+      "sha256": "ca5982b09cc2b133af16206e83442455e8e8526edbb4c4d655d46c0d1326aec9",
+      "duration_seconds": 368.547007,
+      "sampled_frames": 38,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-027",
+      "title": "LumaAgent-面试官：RAG_效果很差？先检查你的向量...-20260917_075526.mp4",
+      "sha256": "c287bcb978e345f496d92b34e55e2fe82d6cc59524c727804c108117aac3257a",
+      "duration_seconds": 248.779002,
+      "sampled_frames": 26,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-028",
+      "title": "LumaAgent-面试官：RAG_越更新效果越差？说明你没...-20260917_075538.mp4",
+      "sha256": "f2c0be64c55ae1e51a0b2a2ad3d4c39b4cd3490f620161c389350c0954334e9e",
+      "duration_seconds": 232.640998,
+      "sampled_frames": 25,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-029",
+      "title": "LumaAgent-面试官：只用向量检索做_RAG？你已经输...-20260917_075418.mp4",
+      "sha256": "b5fe37ba63c20ca597975227ad9ee333fff99f6a96d0e3a0f06cc88556960377",
+      "duration_seconds": 206.449002,
+      "sampled_frames": 22,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-030",
+      "title": "LumaAgent-面试官说：大模型面试必考Agent长任务...-20260917_075403.mp4",
+      "sha256": "4e2a2e9b95c959d7aa6546558203d4fb389405af7c1d40b2f0972c6138384776",
+      "duration_seconds": 333.95,
+      "sampled_frames": 35,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-031",
+      "title": "LumaAgent-面试官问：Agent_和_Workflo...-20260917_075433.mp4",
+      "sha256": "9d0ef96ca1a0200046a74f8df89eaed54f9399d4272e31f7a8e1972be82d1f61",
+      "duration_seconds": 222.586916,
+      "sampled_frames": 24,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-032",
+      "title": "LumaAgent-面试官问：Agent_工具调用看着都对，...-20260917_075509.mp4",
+      "sha256": "c8499a0a367a4dd00aaedcc2aeefb04044bd20a73cbb969372973c7949adc350",
+      "duration_seconds": 301.186009,
+      "sampled_frames": 32,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-033",
+      "title": "LumaAgent-面试官问：Agent_规划得头头是道，为...-20260917_075448.mp4",
+      "sha256": "6bbd85febcc29b510b8ac6d86749415b762aaa26190e56b52b2ceba53b7d2271",
+      "duration_seconds": 294.615011,
+      "sampled_frames": 31,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-034",
+      "title": "LumaAgent-面试官问：Agent_输出总胡说八道，如...-20260917_075536.mp4",
+      "sha256": "02852213ce0643d2ca1ccc10a30a664772665bfdc40f191412bda4ccebb3b026",
+      "duration_seconds": 212.277007,
+      "sampled_frames": 23,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-035",
+      "title": "LumaAgent-面试官问：Agent_频繁出现工具误调用...-20260917_075237.mp4",
+      "sha256": "b5667f029879c08baeb5a4894379344924b05f7ec7c1a541af80c83a51514f4e",
+      "duration_seconds": 221.750998,
+      "sampled_frames": 24,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-036",
+      "title": "LumaAgent-面试官问：Agent八股文背得滚瓜烂熟，...-20260917_075442.mp4",
+      "sha256": "c67d9640602d8d891a8277cb19b4597f77884c55d1d365bc3cfb342d8afeb951",
+      "duration_seconds": 289.437007,
+      "sampled_frames": 30,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-037",
+      "title": "LumaAgent-面试官问：Agent工具调用逻辑没问题，...-20260917_075431.mp4",
+      "sha256": "e895ac913dfca023cdd8c1e5282bb8cefcd59bea707d7f274ac532267226ba0f",
+      "duration_seconds": 215.737007,
+      "sampled_frames": 23,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-038",
+      "title": "LumaAgent-面试官问：Agent效果差，别只怪模型，...-20260917_075445.mp4",
+      "sha256": "4c701641280e4929b7efe49890da0793eab846ac69f0f28b9a4eafa86df5b8b9",
+      "duration_seconds": 331.767007,
+      "sampled_frames": 35,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-039",
+      "title": "LumaAgent-面试官问：Agent能跑通Demo，为什...-20260917_075454.mp4",
+      "sha256": "1d418878723b91d9464474b5c2e54f2d082682403e30be7847241ad04a85f21d",
+      "duration_seconds": 338.686916,
+      "sampled_frames": 35,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-040",
+      "title": "LumaAgent-面试官问：Agent跑3小时崩在第47步...-20260917_075415.mp4",
+      "sha256": "8db5105ef9fea078ba67227aad6da829b3d9e8b37d224b1485413ceace332fec",
+      "duration_seconds": 292.640998,
+      "sampled_frames": 31,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-041",
+      "title": "LumaAgent-面试官问：Agent长任务容易中途跑偏，...-20260917_075540.mp4",
+      "sha256": "dda88512fe667aae66437568c83aaab88d9ef9f15869beb169e4a399da162c2a",
+      "duration_seconds": 258.833333,
+      "sampled_frames": 27,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-042",
+      "title": "LumaAgent-面试官问：为什么大厂都在把_Agent_...-20260917_075427.mp4",
+      "sha256": "d3c8eab43ba5c3328ccdec203e816633ee85d2c2c1147e8742a92de61f7a88b9",
+      "duration_seconds": 213.112993,
+      "sampled_frames": 23,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-043",
+      "title": "LumaAgent-面试官问：你做的那个RAG项目，召回率多...-20260917_075439.mp4",
+      "sha256": "c47c70b842fdfe08b1bb473cb08bee3a630afd716bf92b6a7d588a633ba34241",
+      "duration_seconds": 271.975011,
+      "sampled_frames": 29,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-044",
+      "title": "LumaAgent-面试官问：多_Agent_协作总出问题，...-20260917_075501.mp4",
+      "sha256": "4dae5b9dc325f4c72cdd6054f9e77284d33e43ace4882db30ada37f4327e3660",
+      "duration_seconds": 258.321995,
+      "sampled_frames": 27,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-045",
+      "title": "LumaAgent-面试官问：拆了好几个Agent分工协作，...-20260917_075459.mp4",
+      "sha256": "d3c92d6dbadbffb5886db0907033be8d46d238d3517b6a166ab029a498995136",
+      "duration_seconds": 300.188005,
+      "sampled_frames": 31,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-046",
+      "title": "LumaAgent-面试官问：线上_Agent_出了问题怎么...-20260917_075506.mp4",
+      "sha256": "e5d4beba12cdd0f8f0f03f95b2360bb3800e4f4d13777d8eb171eb4648cc5f3b",
+      "duration_seconds": 245.922993,
+      "sampled_frames": 26,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-047",
+      "title": "LumaAgent-面试官问RAG排障第一句话就看出你是真做...-20260917_075306.mp4",
+      "sha256": "75a8a2d72b91bf83cdcfa8f99c5abbff692257c342c47b3a47674d1b7ec75ee7",
+      "duration_seconds": 313.120998,
+      "sampled_frames": 33,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-048",
+      "title": "LumaAgent-面试官问你：_Agent调_50_次工具...-20260917_075420.mp4",
+      "sha256": "d83575ae8d6b41c7f3547bf843b3c447cf2aa25133ca98afcffd6b47424fde40",
+      "duration_seconds": 317.44,
+      "sampled_frames": 33,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-049",
+      "title": "LumaAgent-面试官问你：Agent_把公司机密传给外...-20260917_075409.mp4",
+      "sha256": "323211a701783d6af5bc5e79484a130ae7f0a0427f63fa08b67d284033e61c3b",
+      "duration_seconds": 344.05,
+      "sampled_frames": 36,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-050",
+      "title": "LumaAgent-面试官问我敢让AI管银行卡吗？这道Age...-20260917_075304.mp4",
+      "sha256": "d40f0e6ac52712f954958f5362bceae21b2a40ece1cbd71cd2584590622422fc",
+      "duration_seconds": 293.871995,
+      "sampled_frames": 31,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-051",
+      "title": "LumaAgent-面试真相：93%的Agent项目死在De...-20260917_075534.mp4",
+      "sha256": "685ef0c6e66c2560e38133b98f0d145bced0b71735e4b772fbef6a267577053f",
+      "duration_seconds": 236.449002,
+      "sampled_frames": 25,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-052",
+      "title": "LumaAgent-面试真相：绝大多数_Agent_卡死，都...-20260917_075520.mp4",
+      "sha256": "dd3f930d5c980cd10ecedf3f0b140adaf2c0aba25bc4349070c547747841d1f1",
+      "duration_seconds": 314.281995,
+      "sampled_frames": 33,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-053",
+      "title": "LumaAgent-面试题：RAG_到底是什么？3分钟搞懂A...-20260917_075504.mp4",
+      "sha256": "70860b42d96886dbbbb6ec133ec800e690bf22306e44d1f8e3f596eed1e37930",
+      "duration_seconds": 163.421995,
+      "sampled_frames": 18,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-054",
+      "title": "LumaAgent-面试高分回答：一道题搞定_Agent_工...-20260917_075425.mp4",
+      "sha256": "421298cff1f8766e0c52d6a55751ba5691ef7d2e976508e8670e8f994648d0c1",
+      "duration_seconds": 220.403991,
+      "sampled_frames": 23,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-055",
+      "title": "AI大模型日记-“向量数据库+RAG”搞不定记忆？_一个...-20260917_075634.mp4",
+      "sha256": "6212457eac3735a4d9a47a606ccddfe7f705952e8cd45dcb90ce125a118c7d39",
+      "duration_seconds": 303.4,
+      "sampled_frames": 32,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-056",
+      "title": "AI大模型日记-Agent底层原理12讲_从金鱼记忆到多...-20260917_075627.mp4",
+      "sha256": "22213636835ef77751028319260a1ed6050badb1fc82a9e1e92cf623a13f3ad7",
+      "duration_seconds": 498.973991,
+      "sampled_frames": 51,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-057",
+      "title": "AI大模型日记-RAG评测就拆3层、抓4个指标_面试官听...-20260917_075638.mp4",
+      "sha256": "50fdec68a487f302d98febcf4966c55079fbb08dee4cbc95a9bfb0bbca362a55",
+      "duration_seconds": 260.6,
+      "sampled_frames": 27,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-058",
+      "title": "AI大模型日记-优化Skill_Prompt是最大的内卷...-20260917_075651.mp4",
+      "sha256": "fa6c806bd2f4c184ce07a8593d699885400e7465d04c933ad82deed48267a420",
+      "duration_seconds": 305.133333,
+      "sampled_frames": 32,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-059",
+      "title": "AI大模型日记-大模型为什么会产生幻觉？_6层归因，从“...-20260917_075640.mp4",
+      "sha256": "afab52e12a1628a648ec8d04babd1f0d008b9a4a214177a7e50960da9ba8941b",
+      "duration_seconds": 312.333333,
+      "sampled_frames": 33,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-060",
+      "title": "AI大模型日记-生产级PDF文件识别RAG要过4道关，9...-20260917_075648.mp4",
+      "sha256": "a66a36299be021c3019d4b25ceef0f42adc0e95c6dd85df1520058430591d640",
+      "duration_seconds": 379.933333,
+      "sampled_frames": 39,
+      "audio_transcribed": false,
+      "independently_verified": false
+    },
+    {
+      "id": "video-061",
+      "title": "AI大模型日记-面试被问Agent上下文管理，80%的人...-20260917_075645.mp4",
+      "sha256": "97be1f88026826388e4861d55dbbaafc75573cb488a28bbd38fb30b3b908dc61",
+      "duration_seconds": 423.733333,
+      "sampled_frames": 44,
+      "audio_transcribed": false,
+      "independently_verified": false
+    }
+  ]
+}

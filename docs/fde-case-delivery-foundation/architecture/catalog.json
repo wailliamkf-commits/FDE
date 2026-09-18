@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "content_version": "0.2.0",
+  "type": "architecture_reference_catalog_not_executor",
+  "patterns": [
+    {
+      "id": "WF",
+      "path": "patterns/workflow.md",
+      "use_when": "固定字段和流程",
+      "avoid_when": "动态未知路径",
+      "source_ids": [
+        "video-013",
+        "video-023",
+        "video-042"
+      ],
+      "status": "candidate_reference",
+      "production_verified": false
+    },
+    {
+      "id": "AG",
+      "path": "patterns/agent.md",
+      "use_when": "下一步依赖语义判断和工具观察",
+      "avoid_when": "固定计算与审批",
+      "source_ids": [
+        "video-002",
+        "video-014",
+        "video-016",
+        "video-025",
+        "video-030"
+      ],
+      "status": "candidate_reference",
+      "production_verified": false
+    },
+    {
+      "id": "RG",
+      "path": "patterns/rag.md",
+      "use_when": "授权文档问答和PDF结构抽取",
+      "avoid_when": "实时价格库存或无来源答案",
+      "source_ids": [
+        "video-004",
+        "video-005",
+        "video-006",
+        "video-017",
+        "video-029",
+        "video-060"
+      ],
+      "status": "candidate_reference",
+      "production_verified": false
+    },
+    {
+      "id": "TC",
+      "path": "patterns/tools.md",
+      "use_when": "外部接口或有副作用动作",
+      "avoid_when": "单纯文案不需要打开接口",
+      "source_ids": [
+        "video-023",
+        "video-035",
+        "video-038",
+        "video-049",
+        "video-050"
+      ],
+      "status": "candidate_reference",
+      "production_verified": false
+    },
+    {
+      "id": "MM",
+      "path": "patterns/memory.md",
+      "use_when": "跨会话事实偏好或工作状态",
+      "avoid_when": "一次性无状态任务",
+      "source_ids": [
+        "video-001",
+        "video-007",
+        "video-055"
+      ],
+      "status": "candidate_reference",
+      "production_verified": false
+    },
+    {
+      "id": "CX",
+      "path": "patterns/context.md",
+      "use_when": "长输入和历史膨胀",
+      "avoid_when": "短任务不建压缩平台",
+      "source_ids": [
+        "video-011",
+        "video-039",
+        "video-040",
+        "video-061"
+      ],
+      "status": "candidate_reference",
+      "production_verified": false
+    },
+    {
+      "id": "RC",
+      "path": "patterns/recovery.md",
+      "use_when": "长任务中断恢复和异步结果未知",
+      "avoid_when": "无法查真实状态时不自动恢复副作用",
+      "source_ids": [
+        "video-013",
+        "video-025",
+        "video-040",
+        "video-041"
+      ],
+      "status": "candidate_reference",
+      "production_verified": false
+    },
+    {
+      "id": "MA",
+      "path": "patterns/multi-agent.md",
+      "use_when": "角色能力权限不同且结果独立可验",
+      "avoid_when": "单执行者足够或职责不清",
+      "source_ids": [
+        "video-012",
+        "video-014",
+        "video-044",
+        "video-045",
+        "video-051"
+      ],
+      "status": "candidate_reference",
+      "production_verified": false
+    },
+    {
+      "id": "SR",
+      "path": "patterns/skill-routing.md",
+      "use_when": "相近技能误选或目录规模大",
+      "avoid_when": "少量技能无需检索路由平台",
+      "source_ids": [
+        "video-055",
+        "video-058"
+      ],
+      "status": "candidate_reference",
+      "production_verified": false
+    },
+    {
+      "id": "EV",
+      "path": "patterns/evaluation.md",
+      "use_when": "质量更新回归和故障定位",
+      "avoid_when": "缺样本不得编造得分",
+      "source_ids": [
+        "video-020",
+        "video-028",
+        "video-034",
+        "video-046",
+        "video-057"
+      ],
+      "status": "candidate_reference",
+      "production_verified": false
+    }
+  ]
+}
