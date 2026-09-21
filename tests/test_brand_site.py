@@ -21,12 +21,12 @@ class BrandSitePackagingTests(unittest.TestCase):
     def test_catalog_and_ui_contract(self):
         catalog = json.loads((ROOT / "catalog.json").read_text())
         entry = next(item for item in catalog["skills"] if item["name"] == NAME)
-        self.assertEqual(entry["content_version"], "1.0.0")
+        self.assertEqual(entry["content_version"], "1.1.0")
         self.assertEqual(entry["category"], "brand/storefront")
         self.assertIn(NAME, fde.SKILL_NAMES)
         text = (BASE / "SKILL.md").read_text()
         self.assertTrue(text.startswith(f"---\nname: {NAME}\n"))
-        self.assertIn('version: "1.0.0"', text.split("---", 2)[1])
+        self.assertIn('version: "1.1.0"', text.split("---", 2)[1])
         ui = (BASE / "agents/openai.yaml").read_text()
         self.assertIn(f"${NAME}", ui)
         short = re.search(r'short_description: "([^"]+)"', ui).group(1)
@@ -46,11 +46,13 @@ class BrandSitePackagingTests(unittest.TestCase):
         expected = {
             "business-adaptation.md", "model-orchestration.md", "market-competitors.md",
             "architecture-content.md", "visual-interaction.md", "discovery-growth.md",
-            "release-maintenance.md", "sources.md",
+            "release-maintenance.md", "sources.md", "seo-delivery-playbook.md",
+            "multilingual-change-control.md",
         }
         self.assertEqual({p.name for p in (BASE / "references").glob("*.md")}, expected)
         templates = {"research-page-workbook.md", "visual-state-contract.md",
-                     "content-experiments.md", "release-improvement.md", "model-work-order.md"}
+                     "content-experiments.md", "release-improvement.md", "model-work-order.md",
+                     "seo-page-spec.md", "seo-release-matrix.md"}
         self.assertEqual({p.name for p in (BASE / "assets").glob("*.md")},
                          templates | {"forward-cases.md"})
 

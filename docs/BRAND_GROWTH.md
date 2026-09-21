@@ -1,4 +1,8 @@
-# 品牌增长方法 v0.3.0
+# 品牌增长方法 v0.4.0
+
+## v0.4.0 搜索交付与量化
+
+SEO/GEO机会与网站落地读取 [搜索交付路线](../skills/fde-brand-growth/references/search-delivery.md) 和 [三层指标契约](../skills/fde-brand-growth/references/search-measurement.md)。填写机会工作包及搜索记分卡，按实际来源/窗口/分母验收。B2B线索仍不进入购买快照脚本；此次增加方法与模板，不新增收费服务或自动执行器。总入口见 [SEO / Agent 网站交付](SEO_AGENT_DELIVERY.md)。
 
 目标：从「买到更多点击」升级为「持续获得可服务、有需求、能产生可持续贡献的人群」。本模块作为FDE的业务分析能力，使用 `skills/fde-brand-growth/SKILL.md`；独立于现有通用交付流程，不重建FDE，也不要求安装多个常驻Agent。
 

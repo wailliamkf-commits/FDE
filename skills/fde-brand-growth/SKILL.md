@@ -2,7 +2,7 @@
 name: fde-brand-growth
 description: Analyze brand acquisition quality, intent-to-page funnels, market validation, and repeatable growth across channels. Use for a brand growth review, launch experiment, scaling decision, or asset and resilience plan; not for standalone ad copy or live campaign execution.
 metadata:
-  version: "0.3.0"
+  version: "0.4.0"
   category: "growth/strategy"
 ---
 
@@ -25,6 +25,8 @@ metadata:
 6. **核验并交接。** 分清观察结果、归因结果和增量证明。对符合 [离线输入约定](references/offline-audit.md) 的规范化单组快照，先将工作目录设为本Skill目录，再运行 `python3 -I -B scripts/audit_snapshot.py INPUT.json`（输入使用项目中的绝对路径），输出只做口径门禁和描述计算。检查 [来源案例与反例](references/case-lessons.md) 的相关失败模式。证据状态使用 `OBSERVED / REPORTED / HYPOTHESIS / UNKNOWN / SYNTHETIC`；决策状态使用 `NEEDS_DATA / TEST / SCALE_CANDIDATE / HOLD`；测试通过不等于业务达标。
 
 ## 按需调用渠道专项
+
+SEO/GEO机会排序、视频经验落地或网站增长工作包，读取 [搜索交付路线](references/search-delivery.md)；涉及搜索、AI引用或B2B线索量化时读取 [三层指标契约](references/search-measurement.md)。用 [机会工作表](assets/search-opportunity-workbook.md) 交接页面及变更，用 [搜索记分卡](assets/search-scorecard.md) 区分交付质量、运行和成熟业务结果。基础包的来源索引按需检索，不一次加载全部视频历史。
 
 渠道专项诊断时，先检查当前可用技能：Google Ads 取数、目标口径、Search/Shopping/PMax/Demand Gen 到页面问题使用 `google-ads-diagnostics`；Meta 素材、版位、目录/表单到页面问题使用 `meta-ads-diagnostics`。只读取相关专项，不同时运行全库；未安装专项时继续本技能已有分支并说明覆盖限制，不自动安装。专项产出的证据和任务回到同一份复盘，跨平台归因收入保持分列。
 

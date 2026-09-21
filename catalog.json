@@ -2,15 +2,16 @@
   "schema_version": 1,
   "type": "toolbox_catalog_not_host_config",
   "name": "fde-delivery-toolbox",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "reference_packs": [
     {
       "name": "fde-case-delivery-foundation",
       "display_name": "FDE 案例驱动交付基础包",
-      "content_version": "0.1.0",
+      "content_version": "0.2.0",
       "type": "reference_pack",
       "path": "docs/fde-case-delivery-foundation/README.md",
       "source_index": "docs/fde-case-delivery-foundation/cases.json",
+      "video_source_index": "docs/fde-case-delivery-foundation/source-coverage.json",
       "native_skill": false
     }
   ],
@@ -43,7 +44,7 @@
       "name": "fde-brand-growth",
       "path": "skills/fde-brand-growth/SKILL.md",
       "category": "growth/strategy",
-      "content_version": "0.3.0"
+      "content_version": "0.4.0"
     },
     {
       "name": "google-ads-diagnostics",
@@ -55,7 +56,7 @@
       "name": "fde-brand-site",
       "path": "skills/fde-brand-site/SKILL.md",
       "category": "brand/storefront",
-      "content_version": "1.0.0"
+      "content_version": "1.1.0"
     },
     {
       "name": "meta-ads-diagnostics",

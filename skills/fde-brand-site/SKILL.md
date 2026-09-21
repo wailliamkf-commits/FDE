@@ -2,7 +2,7 @@
 name: fde-brand-site
 description: Plan, build and improve brand websites across retail, custom orders, B2B leads, services, subscriptions and content businesses. Route from business-model discovery through competitors, content, visuals, SEO, organic growth and responsive interaction to verified release, using a current frontier planner to select execution models. Not for standalone ad diagnostics or autonomous production operations.
 metadata:
-  version: "1.0.0"
+  version: "1.1.0"
   category: "brand/storefront"
 ---
 
@@ -16,7 +16,7 @@ metadata:
 2. 首次建站或定位有争议，读取[市场与竞品](references/market-competitors.md)；已有定位的局部修复只补相关证据。完成标准：每个关键品牌/页面决策有来源或明确假设，并保留竞争解释。
 3. 页面职责、商品分类、文案或连接问题，读取[架构与内容](references/architecture-content.md)。用[研究与页面工作表](assets/research-page-workbook.md)固定主要旅程及每页的用户问题、证据、动作与状态。完成标准：页面不是孤岛，也不把同一段宣传文案复制到全站。
 4. 品牌视觉、场景图、模块节奏、响应式或动效任务，读取[视觉与交互](references/visual-interaction.md)，使用[视觉与状态契约](assets/visual-state-contract.md)。完成标准：每张图有叙事任务、来源等级、显示尺寸与验收；每项交互有操作/反馈/失败/减少动态/无JS策略。
-5. SEO、GEO、博客或自然流量任务，读取[发现与增长](references/discovery-growth.md)，用[内容与实验计划](assets/content-experiments.md)。完成标准：意图映射到可索引的有用页面，指标与归因分开；没有真实数据时交付验证计划，不承诺排名或引用。
+5. SEO、GEO、博客或自然流量任务，读取[发现与增长](references/discovery-growth.md)，用[内容与实验计划](assets/content-experiments.md)。页面生产、引用审稿、内链候选、图片发布、SEO插件迁移或表单治理，再读[SEO交付操作](references/seo-delivery-playbook.md)，填写[SEO页面规格](assets/seo-page-spec.md)及适用的[SEO发布矩阵](assets/seo-release-matrix.md)。多语言批次先读[多语言变更控制](references/multilingual-change-control.md)。完成标准：每项变更绑定输入、证据、对象和验收；没有运行证据的项目保留未验证，不承诺排名或引用。
 6. 实施和发布读取[工程、发布与维护](references/release-maintenance.md)。优先在现有平台的主题/模板中做最小修改，不为一次优化换技术栈。完成人工/自动测试后，用[发布与持续改进记分卡](assets/release-improvement.md)逐项给出证据和边界；仅经已授权执行器保存/发布，并回读正确线上对象。
 7. 收尾回答：本次改变了哪一个用户决策或体验；什么确实上线并测过；哪里只是本地结果；剩余阻塞与下一批证据触发条件。项目资料留项目工作区；本仓库只保留通用流程、空模板与标注合成的练习。
 

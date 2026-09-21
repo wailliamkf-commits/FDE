@@ -1,8 +1,10 @@
-# FDE 案例驱动交付基础包 · 0.1.0
+# FDE 案例驱动交付基础包 · 0.2.0
 
 标识：`fde-case-delivery-foundation`。类型：**reference_pack**，不是第十个原生 Skill、执行器或自动方案生成服务。
 
 从 Datawhale 第一期 24 个案例提炼需求诊断与交付方法；后续导图、视频、官方文档作为有出处的增量资料进入，不改变已有项目授权。
+
+本版增加 133 份历史视频报告版本的脱敏方法索引；对应 123 个来源路径，包含 10 个同名替换版，不包含旧 61 条批次。132 条提供方法或反例，122 仅保留排除记录。所有视频来源均为 `visual_only` 历史文字证据；覆盖不等于逐条事实验证，详见 [视频证据边界](video-evidence.md)。
 
 ## 最短使用路径
 
@@ -22,6 +24,14 @@
 - [补充与版本规则](updates.md)：来源去重、冲突、过期、模型无关的知识更新。
 - [合成示例](example.md)：库存异常只读试点，不是真实客户项目。
 - [人工演练清单](evaluation.md)：能力边界测试；未执行的宿主/业务验证显式保留。
+- [133条覆盖索引](source-coverage.json)：按 `new-video-NNN`、主题、来源哈希查方法路径、冲突和同名替换关系。
+- [选词与页面归属](video-keywords.md)：采购意图、工具口径、竞争缺口、聚类与疑似蚕食。
+- [页面架构与内容生产](video-architecture-content.md)：Page Spec、页面模块、六类内容模板、证据审稿、补丁链、多语言。
+- [技术SEO与CMS实操](video-technical-search.md)：索引、HTTP、图片、插件迁移、表单、国际化与抓取回退。
+- [测量、渠道与GEO](video-distribution-measurement.md)：多源报表、询盘、外链审计、实体知识、AI引用与Discover口径。
+- [Agent与企业知识系统架构](agent-knowledge-architecture.md)：知识治理、权限检索、长任务接续、共享知识及成本门槛。
+
+独立站任务由现有 `fde-brand-site` / `fde-brand-growth` 按问题读取相应章节；需要原报告时，用 ID 与报告哈希向有权保管资料的人定位。本包不分发私人报告、媒体、客户案例数据或账户配置。
 
 ## 与现有技能的分工
 

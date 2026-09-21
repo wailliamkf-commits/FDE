@@ -1,4 +1,6 @@
-# FDE Delivery Toolbox · 0.1.9
+# FDE Delivery Toolbox · 0.1.10
+
+本版新增 [SEO / Agent 网站落地入口](docs/SEO_AGENT_DELIVERY.md)：133份视频报告版本的知识索引、原技能升级、页面工作包与三层量化验收。详细原始资料保留在本地档案；没有自动发布、排名承诺或客户系统写入。
 
 正式交付私仓：https://github.com/wailliamkf-commits/FDE 。本仓库从审查后的文件快照建立独立根提交，不继承其他仓库的 Git 历史。交付不要求在维护者账户安装、不要求商店上架，也不要求升级团队账户。接收与验收见 `docs/REPOSITORY_DELIVERY.md`；只有需要原生安装时才阅读 `docs/INSTALL_AND_WORK.md`。
 
@@ -7,7 +9,7 @@
 
 **先读 `START_HERE.md`；只选择当前任务需要的技能，不先搭建万能 Agent 平台。**
 
-## FDE 案例驱动交付基础包 · 0.1.0
+## FDE 案例驱动交付基础包 · 0.2.0
 
 新增 [fde-case-delivery-foundation](docs/fde-case-delivery-foundation/README.md)：24案来源索引、技术选择方法、主方案/备用方案/人工兜底、验收与价值追踪，以及后续知识补充入口。它是供现有九个技能按需读取的参考包，不是新增原生Skill或自动执行器；不包含PDF原件、未抓取的导图节点和真实客户数据。
 
@@ -101,7 +103,7 @@ python3 tools/install.py --project /ABSOLUTE/EXISTING/PROJECT \
 
 参考资料核验日期：2026-09-08。`docs/SOURCES.md` 保存公开来源。插件结构校验、Work 管理员导入、GitHub 上传和真实项目验证分别记录，不合并为“已部署”。
 
-## 品牌增长模块 v0.3.0
+## 品牌增长模块 v0.4.0
 
 新增市场/竞品/用户研究、广告与SEO交接、活动承诺及定制询盘闭环，见 [会议补充与验证](docs/GROWTH_MEETING_UPGRADE.md)。
 
@@ -111,6 +113,6 @@ python3 tools/install.py --project /ABSOLUTE/EXISTING/PROJECT \
 
 [使用与溯源索引](docs/paid-media/README.md)说明两项广告技能的分类、版本、数据需求与验证边界。Google Ads 内容 v2.0.0、Meta 内容 v1.1.0 都可独立按文件使用；只在需要原生安装时按现有安装流程选择对应技能。没有新增广告 API、自动预算操作或必装插件。
 
-## 跨行业品牌网站模块 v1.0.0
+## 跨行业品牌网站模块 v1.1.0
 
-[客户使用入口](docs/BRAND_SITE.md)：零售、定制、B2B、服务预约、订阅和内容业务按模式选择对象、页面、视觉证据、转化与验收，不沿用某一客户的行业设定。包含五张可填写工作表、官方依据和合成演练。前沿思考模型负责定向与选择执行模型；每批次核验实际可用能力，不锁死代际名称。本包提供调度方法，**不包含自动模型切换服务或生产执行器**。
+[客户使用入口](docs/BRAND_SITE.md)：零售、定制、B2B、服务预约、订阅和内容业务按模式选择对象、页面、视觉证据、转化与验收，不沿用某一客户的行业设定。包含七张可填写工作表、官方依据和合成演练。前沿思考模型负责定向与选择执行模型；每批次核验实际可用能力，不锁死代际名称。本包提供调度方法，**不包含自动模型切换服务或生产执行器**。
