@@ -14,7 +14,7 @@ sys.path.insert(0, str(ROOT / "tools"))
 import fde
 import install
 
-ADS = {"google-ads-diagnostics": "2.0.0", "meta-ads-diagnostics": "1.1.0"}
+ADS = {"google-ads-diagnostics": "2.1.0", "meta-ads-diagnostics": "1.1.0"}
 
 
 class PaidMediaPackagingTests(unittest.TestCase):
@@ -108,6 +108,14 @@ class PaidMediaPackagingTests(unittest.TestCase):
         self.assertEqual(len(paths), len(set(paths)))
         for entry in provenance["files"]:
             content = (ROOT / entry["path"]).read_text()
+            appendix = entry.get("local_appendix")
+            if appendix:
+                self.assertEqual(appendix["version"], ADS["google-ads-diagnostics"])
+                self.assertEqual(content.count(appendix["marker"]), 1)
+                original, tail = content.split(appendix["marker"], 1)
+                extension = appendix["marker"] + tail
+                self.assertEqual(hashlib.sha256(extension.encode()).hexdigest(), appendix["sha256"])
+                content = original.replace(f'version: "{appendix["version"]}"', 'version: "2.0.0"', 1)
             if entry["edits"] == "prepend historical notice":
                 content = content.split("\n\n", 1)[1]
             elif entry["edits"] == "add final newline":

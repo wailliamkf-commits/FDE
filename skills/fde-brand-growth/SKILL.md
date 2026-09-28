@@ -2,7 +2,7 @@
 name: fde-brand-growth
 description: Analyze brand acquisition quality, intent-to-page funnels, market validation, and repeatable growth across channels. Use for a brand growth review, launch experiment, scaling decision, or asset and resilience plan; not for standalone ad copy or live campaign execution.
 metadata:
-  version: "0.3.0"
+  version: "0.3.1"
   category: "growth/strategy"
 ---
 

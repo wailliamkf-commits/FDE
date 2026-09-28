@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "integrated_on": "2026-09-12",
-  "toolbox_version": "0.1.9",
+  "toolbox_version": "0.1.11",
   "base_commit": "61276ca7ce80d8d43ce932ae2d68a6dfe209e9ae",
   "history_complete": false,
   "original_sources_retained_outside_repository": true,
@@ -28,7 +28,12 @@
       "original_path": "skills/growth-marketing/google-ads-diagnostics/SKILL.md",
       "path": "skills/google-ads-diagnostics/SKILL.md",
       "original_sha256": "14ce49a1aeaf82b2caa64a37c00d10c5ef7725c57069b676d367f34ec16a5d7a",
-      "edits": "add version/category metadata"
+      "edits": "add version/category metadata",
+      "local_appendix": {
+        "version": "2.1.0",
+        "marker": "\n## 账户接手与结构重建\n",
+        "sha256": "bbb81b7d6267a519bcd9320352304478c385e1547d8eecb5bf2eea8ad90e8e4f"
+      }
     },
     {
       "source": "google",
