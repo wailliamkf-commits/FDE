@@ -14,7 +14,7 @@ sys.path.insert(0, str(ROOT / "tools"))
 import fde
 import install
 
-ADS = {"google-ads-diagnostics": "2.1.0", "meta-ads-diagnostics": "1.1.0"}
+ADS = {"google-ads-diagnostics": "2.2.0", "meta-ads-diagnostics": "1.1.0"}
 
 
 class PaidMediaPackagingTests(unittest.TestCase):

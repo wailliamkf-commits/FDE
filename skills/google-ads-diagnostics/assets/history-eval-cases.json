@@ -1,0 +1,159 @@
+{
+  "notice": "SYNTHETIC：全部为合成输入，非客户数据。用于模型行为演练，不含自动账户操作或预设答案。",
+  "cases": [
+    {
+      "id": "history-current-vs-period",
+      "request": "判断接手重构是否有效，提出下一只读核查。禁止调整任何广告。",
+      "input": {
+        "read_at": "2026-09-28T12:00:00+02:00",
+        "report_period": [
+          "2026-09-22",
+          "2026-09-23"
+        ],
+        "filter": "cost > 0",
+        "visible_rows": 2,
+        "current_campaign": {
+          "id": "C-A",
+          "name": "Search-A-20260922",
+          "status": "enabled",
+          "daily_budget": 1000
+        },
+        "history": [
+          {
+            "time": "2026-09-22T11:00:00+02:00",
+            "id": "C-A",
+            "field": "budget",
+            "old": 200,
+            "new": 300
+          },
+          {
+            "time": "2026-09-27T10:00:00+02:00",
+            "id": "C-A",
+            "field": "budget",
+            "old": 300,
+            "new": 1000
+          }
+        ],
+        "metrics": {
+          "cost": 400,
+          "conversion_value": 720,
+          "conversions": 1.2,
+          "all_conversion_value_per_cost": 12
+        },
+        "conversion_actions": "unknown",
+        "history_coverage": "first 50 rows; total > 50"
+      }
+    },
+    {
+      "id": "history-bulk-identity",
+      "request": "能否说接手人提高预算带来了增长？仅可切换时间和展开记录。",
+      "input": {
+        "batch": "B-1",
+        "time": "2026-09-20T14:00:00+02:00",
+        "actor": "operator_alias_1",
+        "actor_real_identity": "unknown",
+        "tool": "Ads Editor",
+        "parent_summary": "3 changes",
+        "children": [
+          {
+            "id": "C-B",
+            "field": "budget",
+            "old": 100,
+            "new": 200
+          },
+          {
+            "id": "C-B",
+            "field": "target_roas",
+            "old": 4,
+            "new": 2
+          },
+          {
+            "id": "C-B",
+            "field": "status",
+            "old": "paused",
+            "new": "enabled"
+          }
+        ],
+        "comparison": "revenue rose next day",
+        "site_and_promotion_changes": "unknown"
+      }
+    },
+    {
+      "id": "history-boundary-window",
+      "request": "给出所有变更的前后效果，若缺数怎么办？不允许修改筛选和列或导出。",
+      "input": {
+        "allowed_history": [
+          "2026-09-17",
+          "2026-09-28"
+        ],
+        "read_at": "2026-09-28T10:00:00+02:00",
+        "events": [
+          {
+            "time": "2026-09-17T09:00:00+02:00",
+            "id": "C-C",
+            "field": "strategy",
+            "old": "manual",
+            "new": "target_roas"
+          },
+          {
+            "time": "2026-09-28T09:30:00+02:00",
+            "id": "C-C",
+            "field": "target_roas",
+            "old": 3,
+            "new": 2
+          }
+        ],
+        "reported_conversion_lag_days": 7,
+        "prior_period": "unavailable",
+        "performance_filter": "cost > 0"
+      }
+    },
+    {
+      "id": "history-window-access",
+      "request": "用户截图显示账户A已登录，但扩展窗口出现无账号页面。请继续只读复核，不更改账户或权限。",
+      "input": {
+        "screenshot": "Account A, change-history report",
+        "extension_session": "No Ads account",
+        "native_window_inventory": "not_checked",
+        "requested_history": [
+          "2026-09-17",
+          "2026-09-28"
+        ],
+        "account_write_authorized": false
+      }
+    },
+    {
+      "id": "history-dependent-settings",
+      "request": "两个系列从组合策略切回独立后ROAS上涨，是否证明拆开成功？请解释当前配置，只可只读。",
+      "input": {
+        "day_1": {
+          "campaigns": [
+            "C-D",
+            "C-E"
+          ],
+          "portfolio_id": "P-1",
+          "shared_budget_id": "B-1",
+          "shared_daily_budget": 600
+        },
+        "day_2": {
+          "C-D": {
+            "standalone_budget": 350,
+            "target_roas_percent": 300,
+            "exploration_tolerance_percent": 20
+          },
+          "C-E": {
+            "standalone_budget": 250,
+            "target_roas_percent": 200,
+            "new_customer_additional_value": "inherited_account_unknown",
+            "negative_brand_list_id": "L-1",
+            "list_contents": "not_read"
+          }
+        },
+        "new_customer_value_adjustments": "not_available",
+        "net_order_revenue": "unknown",
+        "observation": "next-day platform conversion value/cost rose",
+        "change_origin": "recommendations"
+      }
+    }
+  ]
+}
