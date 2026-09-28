@@ -2,7 +2,7 @@
   "schema_version": 1,
   "type": "toolbox_catalog_not_host_config",
   "name": "fde-delivery-toolbox",
-  "version": "0.1.9",
+  "version": "0.1.12",
   "reference_packs": [
     {
       "name": "fde-case-delivery-foundation",
@@ -43,13 +43,13 @@
       "name": "fde-brand-growth",
       "path": "skills/fde-brand-growth/SKILL.md",
       "category": "growth/strategy",
-      "content_version": "0.3.0"
+      "content_version": "0.3.1"
     },
     {
       "name": "google-ads-diagnostics",
       "path": "skills/google-ads-diagnostics/SKILL.md",
       "category": "growth/paid-media",
-      "content_version": "2.0.0"
+      "content_version": "2.2.0"
     },
     {
       "name": "fde-brand-site",

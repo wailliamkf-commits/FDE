@@ -2,7 +2,7 @@
 name: google-ads-diagnostics
 description: Diagnose Google Ads traffic quality, ad-to-page fit, landing-page content and purchase or qualified-lead friction from account exports, spreadsheets, embedded screenshots and site evidence. Use for Search, Shopping, Performance Max and Demand Gen reviews that must identify required data, retrieval locations and testable optimization tasks.
 metadata:
-  version: "2.0.0"
+  version: "2.2.0"
   category: "growth/paid-media"
 ---
 
@@ -57,3 +57,9 @@ metadata:
 ## 维护
 
 界面路径与平台能力按 [数据地图](references/data-sources.md) 的官方链接现查；资料核验日期不等于客户后台实测日期。只读生成文件不等于已上线优化；文件存入仓库也不等于已安装到技能目录。
+
+## 账户接手与结构重建
+
+接手旧账户、PMax集中、商品很多却缺少选品证据、DSA探索后回到商品分层时，读取 [账户重构](references/account-restructuring.md) 与 [页面池和动态搜索诊断](references/dynamic-search-controls.md)，按需使用 [重构工作表](assets/restructuring-workpad.md)。先识别需求角色、当前可用能力与过渡风险；历史聊天不是当前账户快照。不要把跑满预算、固定等待天数或某一种系列占比当成验收。
+
+核查接手后的更改历史、还原配置有效区间或比较重构前后时，读取 [操作历史复核](references/change-history-review.md)，使用 [历史复核表](assets/history-review.md)。先固定只读动作和覆盖，再连接事件、配置时点与表现；不以当前状态代替历史状态。

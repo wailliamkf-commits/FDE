@@ -1,4 +1,4 @@
-# FDE Delivery Toolbox · 0.1.9
+# FDE Delivery Toolbox · 0.1.12
 
 正式交付私仓：https://github.com/wailliamkf-commits/FDE 。本仓库从审查后的文件快照建立独立根提交，不继承其他仓库的 Git 历史。交付不要求在维护者账户安装、不要求商店上架，也不要求升级团队账户。接收与验收见 `docs/REPOSITORY_DELIVERY.md`；只有需要原生安装时才阅读 `docs/INSTALL_AND_WORK.md`。
 
@@ -101,7 +101,7 @@ python3 tools/install.py --project /ABSOLUTE/EXISTING/PROJECT \
 
 参考资料核验日期：2026-09-08。`docs/SOURCES.md` 保存公开来源。插件结构校验、Work 管理员导入、GitHub 上传和真实项目验证分别记录，不合并为“已部署”。
 
-## 品牌增长模块 v0.3.0
+## 品牌增长模块 v0.3.1
 
 新增市场/竞品/用户研究、广告与SEO交接、活动承诺及定制询盘闭环，见 [会议补充与验证](docs/GROWTH_MEETING_UPGRADE.md)。
 
@@ -114,3 +114,5 @@ python3 tools/install.py --project /ABSOLUTE/EXISTING/PROJECT \
 ## 跨行业品牌网站模块 v1.0.0
 
 [客户使用入口](docs/BRAND_SITE.md)：零售、定制、B2B、服务预约、订阅和内容业务按模式选择对象、页面、视觉证据、转化与验收，不沿用某一客户的行业设定。包含五张可填写工作表、官方依据和合成演练。前沿思考模型负责定向与选择执行模型；每批次核验实际可用能力，不锁死代际名称。本包提供调度方法，**不包含自动模型切换服务或生产执行器**。
+
+广告账户接手、页面池探索与商品分层见 [本轮架构更新](docs/paid-media/ARCHITECTURE_UPDATE_20260928.md)。
