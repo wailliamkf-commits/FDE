@@ -1,0 +1,139 @@
+{
+  "example_kind": "synthetic_non_executable",
+  "schema_version": "media-knowledge-claim.example.v1",
+  "claim_id": "example-claim-001",
+  "title": "重要内容的站内入口检查",
+  "statement": "合成材料建议为重要内容补充站内入口；是否改善任何具体网站的索引或业务表现尚未验证。",
+  "evidence_category": "source_report",
+  "truth_status": "unverified_author_claim",
+  "decision": "candidate",
+  "source": {
+    "asset_id": "example-video-001",
+    "version_id": "example-source-v1",
+    "revision_of": null,
+    "kind": "video",
+    "title": "合成教学片",
+    "origin_reference": "project-private-source-reference-required",
+    "sha256": null,
+    "bytes": null,
+    "author_verified": false,
+    "recorded_at": null,
+    "obtained_at": null,
+    "distribution_permission": "not_checked"
+  },
+  "scope": {
+    "mode": "visual_only",
+    "duration_sec": null,
+    "audio_present": null,
+    "audio_read": false,
+    "full_transcript": false,
+    "full_video_understanding": false,
+    "requires_audio_review": null,
+    "review_pending": true,
+    "limitations": [
+      "示例没有真实素材、读取会话或效果数据。",
+      "画面文字不能代替未读音频；接受视觉范围不会自动批准来源清理。"
+    ]
+  },
+  "evidence": [
+    {
+      "anchor": "EXAMPLE-E0001",
+      "asset_id": "example-video-001",
+      "source_sha256": null,
+      "image_sha256": null,
+      "timestamp_sec": null,
+      "timestamp_basis": "not_checked",
+      "physical_page": null,
+      "page_order_basis": null,
+      "parent_evidence_id": null,
+      "reason": "example_placeholder",
+      "visible_text": null,
+      "author_claim": "为重要内容补充站内入口。",
+      "read_audit_reference": null,
+      "successful_image_attachment_verified": false,
+      "codex_visual_review_reference": null
+    }
+  ],
+  "authoritative_checks": [
+    {
+      "source_url": "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+      "retrieved_at": null,
+      "published_or_updated_at": null,
+      "status": "not_checked_for_this_claim",
+      "supports": null,
+      "scope_limit": "独立核对一般原则，不能据此证明特定网站的效果。"
+    }
+  ],
+  "business_context": {
+    "model": "unknown",
+    "basis": "示例没有客户、交易模式或转化链路证据。",
+    "segments": [],
+    "baseline_reference": null,
+    "measurement_window": null,
+    "sample_denominator": null,
+    "business_effect_status": "not_tested",
+    "confounders": [
+      "内容、导航和外部引用若同时改变，效果不能单独归因于一个动作。"
+    ]
+  },
+  "candidate_routes": [
+    {
+      "route_id": "example-route-review-links",
+      "action": "在项目授权范围内检查重要内容的现有入口，形成可回退草稿。",
+      "prerequisites": [
+        "确认目标页面应保留且希望获得搜索入口。",
+        "确认目标客户及业务链路，取得当前基线。"
+      ],
+      "evidence_anchors": ["EXAMPLE-E0001"],
+      "expected_effect": "hypothesis_only",
+      "effort_estimate": null,
+      "validation": "先验证可访问性及链接事实，再按约定窗口观察；业务收益另行验证。",
+      "stop_condition": "出现访问损坏、输入版本变化或不能区分同期变化时重新评审。",
+      "rollback": "保留草稿前版本和具体变更映射。",
+      "relationships": [
+        {
+          "other_route_id": "example-route-content-inventory",
+          "relation": "parallel",
+          "condition": "双方只读且不改变同一测试输入；实施阶段另查冲突。"
+        },
+        {
+          "other_route_id": "example-route-confirm-retention",
+          "relation": "depends_on",
+          "condition": "先决定该页面是否应继续保留。"
+        },
+        {
+          "other_route_id": "example-route-exclude-index",
+          "relation": "mutually_exclusive",
+          "condition": "同一 URL、同一目标和时间窗内，争取索引与明确排除索引冲突。"
+        }
+      ]
+    }
+  ],
+  "related_route_definitions": {
+    "example-route-content-inventory": "只读内容清点候选，未实施。",
+    "example-route-confirm-retention": "判断业务保留目的，未实施。",
+    "example-route-exclude-index": "仅在另有排除搜索需求时考虑，未实施。"
+  },
+  "review": {
+    "reviewer": null,
+    "reviewed_at": null,
+    "accepted_scope": null,
+    "artifact_hashes_reference": null,
+    "mirror_verification_reference": null,
+    "remaining_questions": [
+      "真实来源、字面证据、音频状态、宿主能力和业务条件尚待填写。"
+    ]
+  },
+  "retention": {
+    "decision": "retain",
+    "allow_source_trash": false,
+    "external_authorization_reference": null,
+    "restore_receipt_reference": null,
+    "note": "此例没有任何执行授权；移入废纸篓与释放物理空间分别核验。"
+  },
+  "recheck_triggers": [
+    "来源或产物哈希变化",
+    "官方规则或宿主配置变化",
+    "新的反例、字幕或音频证据出现"
+  ]
+}

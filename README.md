@@ -1,4 +1,4 @@
-# FDE Delivery Toolbox · 0.1.12
+# FDE Delivery Toolbox · 0.1.13
 
 正式交付私仓：https://github.com/wailliamkf-commits/FDE 。本仓库从审查后的文件快照建立独立根提交，不继承其他仓库的 Git 历史。交付不要求在维护者账户安装、不要求商店上架，也不要求升级团队账户。接收与验收见 `docs/REPOSITORY_DELIVERY.md`；只有需要原生安装时才阅读 `docs/INSTALL_AND_WORK.md`。
 
@@ -10,6 +10,10 @@
 ## FDE 案例驱动交付基础包 · 0.1.0
 
 新增 [fde-case-delivery-foundation](docs/fde-case-delivery-foundation/README.md)：24案来源索引、技术选择方法、主方案/备用方案/人工兜底、验收与价值追踪，以及后续知识补充入口。它是供现有九个技能按需读取的参考包，不是新增原生Skill或自动执行器；不包含PDF原件、未抓取的导图节点和真实客户数据。
+
+## 媒体知识摄取与跨渠道参考包 · 0.1.0
+
+[使用入口](docs/media-intake/README.md)连接连续读取、证据审阅、每小时进度、恢复与可恢复清理；按 SEO/GEO、广告、站点、视觉、社区、经营和 Agent 条件化整理来源。提供完整来源索引、时效纠错和试验路线，不提供新的原生 Skill、模型调用/清理执行器或业务收益保证。原始媒体与私人审计保留项目，不随仓库分发。
 
 ## 这是什么，已经做到了什么
 
@@ -109,7 +113,7 @@ python3 tools/install.py --project /ABSOLUTE/EXISTING/PROJECT \
 
 ## 付费媒体诊断模块
 
-[使用与溯源索引](docs/paid-media/README.md)说明两项广告技能的分类、版本、数据需求与验证边界。Google Ads 内容 v2.0.0、Meta 内容 v1.1.0 都可独立按文件使用；只在需要原生安装时按现有安装流程选择对应技能。没有新增广告 API、自动预算操作或必装插件。
+[使用与溯源索引](docs/paid-media/README.md)说明两项广告技能的分类、版本、数据需求与验证边界。Google Ads 内容 v2.2.0、Meta 内容 v1.1.0 都可独立按文件使用；只在需要原生安装时按现有安装流程选择对应技能。没有新增广告 API、自动预算操作或必装插件。
 
 ## 跨行业品牌网站模块 v1.0.0
 

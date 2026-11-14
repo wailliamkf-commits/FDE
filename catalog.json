@@ -2,7 +2,7 @@
   "schema_version": 1,
   "type": "toolbox_catalog_not_host_config",
   "name": "fde-delivery-toolbox",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "reference_packs": [
     {
       "name": "fde-case-delivery-foundation",
@@ -11,6 +11,15 @@
       "type": "reference_pack",
       "path": "docs/fde-case-delivery-foundation/README.md",
       "source_index": "docs/fde-case-delivery-foundation/cases.json",
+      "native_skill": false
+    },
+    {
+      "name": "fde-media-intake",
+      "display_name": "媒体知识摄取与跨渠道参考包",
+      "content_version": "0.1.0",
+      "type": "reference_pack",
+      "path": "docs/media-intake/README.md",
+      "source_index": "docs/media-intake/sources.json",
       "native_skill": false
     }
   ],

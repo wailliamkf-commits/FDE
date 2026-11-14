@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "integrated_on": "2026-09-12",
-  "toolbox_version": "0.1.12",
+  "toolbox_version": "0.1.13",
   "base_commit": "61276ca7ce80d8d43ce932ae2d68a6dfe209e9ae",
   "history_complete": false,
   "original_sources_retained_outside_repository": true,
